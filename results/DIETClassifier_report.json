@@ -1,0 +1,204 @@
+{
+  "cloudapp": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 28,
+    "confused_with": {}
+  },
+  "advanceseoplan": {
+    "precision": 1.0,
+    "recall": 0.9487179487179487,
+    "f1-score": 0.9736842105263158,
+    "support": 39,
+    "confused_with": {
+      "seoplan": 2
+    }
+  },
+  "lname": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "googleads": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 25,
+    "confused_with": {}
+  },
+  "mobileapp": {
+    "precision": 0.95,
+    "recall": 1.0,
+    "f1-score": 0.9743589743589743,
+    "support": 38,
+    "confused_with": {}
+  },
+  "company": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "nationalseo": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "chatbotinfo": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "websitedesign": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 44,
+    "confused_with": {}
+  },
+  "aiservice": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1-score": 0.923076923076923,
+    "support": 24,
+    "confused_with": {}
+  },
+  "applicationai": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 34,
+    "confused_with": {}
+  },
+  "seo": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 38,
+    "confused_with": {}
+  },
+  "webapp": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "intseo": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "marketing": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 36,
+    "confused_with": {}
+  },
+  "pnumber": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "basicseoplan": {
+    "precision": 0.8648648648648649,
+    "recall": 1.0,
+    "f1-score": 0.927536231884058,
+    "support": 32,
+    "confused_with": {}
+  },
+  "facebookads": {
+    "precision": 0.9090909090909091,
+    "recall": 1.0,
+    "f1-score": 0.9523809523809523,
+    "support": 20,
+    "confused_with": {}
+  },
+  "fname": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 21,
+    "confused_with": {}
+  },
+  "seoservice": {
+    "precision": 0.8787878787878788,
+    "recall": 0.9354838709677419,
+    "f1-score": 0.90625,
+    "support": 31,
+    "confused_with": {}
+  },
+  "enterpriseseoplan": {
+    "precision": 0.8918918918918919,
+    "recall": 1.0,
+    "f1-score": 0.9428571428571428,
+    "support": 33,
+    "confused_with": {}
+  },
+  "contentmarketing": {
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "f1-score": 0.9411764705882353,
+    "support": 16,
+    "confused_with": {}
+  },
+  "email": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "localseo": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 18,
+    "confused_with": {}
+  },
+  "whatai": {
+    "precision": 0.8421052631578947,
+    "recall": 1.0,
+    "f1-score": 0.9142857142857143,
+    "support": 16,
+    "confused_with": {}
+  },
+  "seoplan": {
+    "precision": 0.84,
+    "recall": 1.0,
+    "f1-score": 0.9130434782608696,
+    "support": 21,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.950479233226837,
+    "recall": 0.993322203672788,
+    "f1-score": 0.9714285714285714,
+    "support": 599
+  },
+  "macro avg": {
+    "precision": 0.9567366733156206,
+    "recall": 0.9955462238340651,
+    "f1-score": 0.9747792251660289,
+    "support": 599
+  },
+  "weighted avg": {
+    "precision": 0.9542359008082584,
+    "recall": 0.993322203672788,
+    "f1-score": 0.972393136386679,
+    "support": 599
+  }
+}

@@ -1,0 +1,55 @@
+version: "2.0"
+
+responses:
+
+  utter_choose_service:
+    - text: "Our services:"
+      buttons:
+        - title: "Digital Marketing"
+          payload: "digital marketing"
+        - title: "Artificial Intelligence"
+          payload: "ai services"
+        - title: "Software Design and Development"
+          payload: "software development"
+        - title: "Website Design and Development"
+          payload: "website development"
+        - title: "Data Analytics"
+          payload: "data analytics"
+
+  utter_interested_on_other_services:
+    - text: "Are you interested in knowing other services as well?"
+    - text: "What other services or offers that you want to know about?"
+    - text: "What else can I help you with"
+
+  utter_ask_howcanhelp:
+    - text: "Hey, How can I help you?"
+
+  utter_about_volgai:
+    - text: "VolgAI is a striving IT company supporting organizations with complex requirements to find solutions that span their entire businesses. Our team specializes in furnishing outstanding digital marketing, web and software design & development, and artificial intelligence services. <a href='https://volgai.com/about'>About US</a>"
+
+  utter_price_cost:
+    - text: "Please email your request to <a href='mailto:Info@volgai.com'>info@volgai.com</a>. Please specify your request and one of our experts will contact you."
+
+
+  utter_contact_informations:
+    - text: |-
+        You can call on the numbers below during office hours or email us.
+        Contact Information:
+         Head Office(Australia):
+         -----------------------
+         - Phone No.: +61 433 594 555
+         - Address: Building 4, Suite30, 195 Wellington Road
+        Clayton, VIC 3168
+         - Email: <a href='mailto:Info@volgai.com'>info@volgai.com<a/>
+
+        ** Canada Office:
+         -----------------------
+         - Phone No.: +1 403 466 8164
+         - Address: 305 10615 113 ST T5H3H7, Edmonton,
+                    Alberta Canada
+
+        ** Nepal Office:
+         -----------------------
+         - Phone No.: +977 1-5172647
+         - Address: Debinagar Marg, New Baneshwor
+        Kathmandu 44600, Nepal

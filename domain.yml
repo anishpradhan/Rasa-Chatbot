@@ -1,0 +1,258 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- tell_name:
+    use_entities: true
+- FirstName:
+    use_entities:
+    - fname
+- LastName:
+    use_entities:
+    - lname
+- Email:
+    use_entities:
+    - email
+- PhoneNumber:
+    use_entities:
+    - pnumber
+- repeat_name:
+    use_entities: true
+- chitchat:
+    use_entities: true
+- services:
+    use_entities: true
+- choose_service:
+    use_entities: true
+- all_services:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- enterprise_seo:
+    use_entities: true
+- software_development:
+    use_entities: true
+- seo:
+    use_entities: true
+- facebook_ads:
+    use_entities: true
+- website_want:
+    use_entities: true
+- digital_marketing:
+    use_entities: true
+- google_ads:
+    use_entities: true
+- seo_service_plan:
+    use_entities: true
+- seo_services:
+    use_entities: true
+- website_features:
+    use_entities: true
+- basic_seo:
+    use_entities: true
+- website_design:
+    use_entities: true
+- advance_seo:
+    use_entities: true
+- desktop_applications:
+    use_entities: true
+- contact_informations:
+    use_entities: true
+- artificial_intelligence:
+    use_entities: true
+- about_volgai:
+    use_entities: true
+- price_cost:
+    use_entities: true
+- ai_services:
+    use_entities: true
+- ai_chatbot:
+    use_entities: true
+- mobile_applications:
+    use_entities: true
+- web_applications:
+    use_entities: true
+- cloud_applications:
+    use_entities: true
+- ai_applications:
+    use_entities: true
+- faq:
+    use_entities: true
+- machine_learning:
+    use_entities: true
+- natural_language_processing:
+    use_entities: true
+- website_development:
+    use_entities: true
+
+- content_marketing:
+    use_entities: true
+- email_marketing:
+    use_entities: true
+
+- data_analytics
+- data_cleansing
+- data_validation
+- data_visualization
+- business_intelligence
+
+- out_of_scope:
+    use_entities: true
+- seo_service_feature:
+    use_entities: true
+- seo_types:
+    use_entities: true
+- ask_register:
+    use_entities: true
+- social_media_marketing
+entities:
+- fname
+- lname
+- email
+- pnumber
+- marketing
+- seo
+- localseo
+- nationalseo
+- intseo
+- seoplan
+- seoservice
+- seofeature
+- advanceseoplan
+- basicseoplan
+- enterpriseseoplan
+- facebookads
+- googleads
+- websitedesign
+- company
+- chatbotinfo
+- aiservice
+- applicationai
+- mobileapp
+- webapp
+- cloudapp
+- whatai
+- contentmarketing
+slots:
+  fname:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  lname:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  email:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  pnumber:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - attachment:
+      payload:
+        src: https://www.youtube.com/embed/4BtoOt5pcBk
+      type: video
+    text: |-
+      Hey! How are you?
+      Welcome to VolgAI AI assistant! How may I help you?
+  - text: Hey! Whats up
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  - text: I wish I had arms so I could give you a hug. But for now maybe a joke might help
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  - text: Great, if you're happy, it makes me happy too.
+  utter_goodbye:
+  - text: Talk to you later!
+  - text: Bye bye. Call me when you need!
+  - text: see you later!
+  - text: Bye! I hope to chat with you again really soon!
+  - text: Okay, bye
+  - text: Bye, See you soon
+  - text: Ok, Have a great day
+  utter_name:
+  - text: My name is VolgAI Bot.
+  utter_iamabot:
+  - text: I am a bot, Designed by VolgAI.
+  - text: "Yep, I'm a bot!"
+  - text: "Yes, I'm a bot."
+  - text: "Yep, you guessed it, I'm a bot!"
+  - text: "I am indeed a bot 🤖"
+  utter_ask_fname:
+  - text: What is your first name?
+  utter_ask_lname:
+  - text: And your last name?
+  utter_ask_email:
+  - text: Provide your email address
+  utter_ask_pnumber:
+  - text: Also, your phone number please!
+  - text: Provide your phone number
+  utter_details_thanks:
+  - text: |-
+      Thank you for providing your details as:
+      First Name: {fname},
+      Last Name: {lname},
+      Email: {email},
+      Phone Number: {pnumber}
+  utter_more_info:
+  - text: Ask for more info about these, Please!
+  utter_default:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: Sorry, I didn't get that please try again...
+  - text: 🤔 hmmm... I couldn’t get ya! Could you be more specific?
+actions:
+- action_seo_plans
+- action_seo_feature_reply
+- action_seo_faq
+- action_submit
+- action_greet
+- action_say_name
+- utter_more_info
+forms:
+  user_details_form:
+    email:
+    - entity: email
+      type: from_entity
+    fname:
+    - entity: fname
+      type: from_entity
+    lname:
+    - entity: lname
+      type: from_entity
+    pnumber:
+    - entity: pnumber
+      type: from_entity
+e2e_actions: []

@@ -1,0 +1,104 @@
+version: "2.0"
+nlu:
+- intent: about_volgai
+  examples: |
+    - what is [volgai]{"entity": "company", "value": "VolgAI"}
+    - [VolgAI](company)
+    - Want to know about [your company]{"entity": "company", "value": "VolgAI"}
+    - what is [your company]{"entity": "company", "value": "VolgAI"}
+    - [your company]{"entity": "company", "value": "VolgAI"}
+    - what does [volgai]{"entity": "company", "value": "VolgAI"} do?
+    - can you tell me about [volgai]{"entity": "company", "value": "VolgAI"}
+    - tell me about [volgai]{"entity": "company", "value": "VolgAI"}
+    - Can I know about [volgai]{"entity": "company", "value": "VolgAI"}
+    - [volgai]{"entity": "company", "value": "VolgAI"}
+    - and you are designed by [volgai]{"entity": "company", "value": "VolgAI"}
+- intent: all_services
+  examples: |
+    - What Services do you provide?
+    - Services
+    - what are the services you provide
+    - I want to know about the services your are providing
+    - services your company providing
+    - what about services
+    - Can I know about the services that your company provide?
+    - services
+    - servies
+
+- intent: contact_informations
+  examples: |
+    - What is your Phone Number?
+    - Can I get your number
+    - phone number
+    - contact number
+    - contact no.
+    - what is your number
+    - where can I contact you?
+    - How can I contact you?
+    - Please give me your number
+    - I need your number
+    - How can I contact you
+    - contact information please
+    - contact information
+    - contact
+    - how can I get in touch with you
+    - your email address
+    - what is your mail address
+    - what is your email address
+    - what is your email
+    - email
+    - mail address
+    - email address
+    - how to connect
+    - connect with you
+    - connect to you
+    - can i join your company
+    - can i join your team
+    - join your team
+    - can I talk to someone?
+    - i want to talk to someone
+    - who should I contact to
+    - to whom can i contact to
+    - contact someone
+    - phone
+    - how can I contact you
+    - what is your phone number
+    - contact us
+
+- intent: price_cost
+  examples: |
+    - seo cost
+    - seo service cost
+    - Do you have a price list?
+    - what is the cost
+    - what about cost?
+    - I want to know about pricing
+    - pricing
+    - cost
+    - cost list
+    - charges
+    - price list
+    - how much does it cost
+    - total cost
+    - is it cost effective
+    - price
+    - price of package
+    - package pricing
+
+- intent: faq
+  examples: |
+    - faq
+    - FAQ
+    - frequently asked questions
+    - Frequetnly asked
+    - frequent questions
+    - faqs
+    - FAQs
+    - regular asked questions
+    - regularly asked questions
+
+- synonym: VolgAI
+  examples: |
+    - volgai
+    - your company
+    - our company

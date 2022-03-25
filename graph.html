@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_greet];
+2 [class="", fontsize=12, label=utter_choose_service];
+3 [class="", fontsize=12, label=utter_desktop_applications];
+4 [class="", fontsize=12, label=utter_interested_on_other_services];
+5 [class="", fontsize=12, label=utter_goodbye];
+8 [class="", fontsize=12, label=utter_mobile_applications];
+10 [class="", fontsize=12, label=utter_choose_service];
+18 [class="", fontsize=12, label=utter_web_applications];
+28 [class="", fontsize=12, label=utter_cloud_applications];
+37 [class="", fontsize=12, label=utter_ai_services];
+45 [class="", fontsize=12, label=utter_ai_chatbot];
+54 [class="", fontsize=12, label=utter_AI];
+63 [class="", fontsize=12, label=utter_ai_usecase];
+70 [class="", fontsize=12, label=utter_machine_learning];
+76 [class="", fontsize=12, label=utter_nlp];
+82 [class="", fontsize=12, label=utter_ai_applications];
+90 [class="", fontsize=12, label=utter_website_design];
+100 [class="", fontsize=12, label=utter_web_features];
+110 [class="", fontsize=12, label=utter_want_website];
+119 [class="", fontsize=12, label=utter_happy];
+121 [class="", fontsize=12, label=utter_cheer_up];
+122 [class="", fontsize=12, label=utter_did_that_help];
+130 [class="", fontsize=12, label=utter_interested_on_other_services];
+133 [class="", fontsize=12, label=utter_marketing_service];
+143 [class="", fontsize=12, label=utter_seo];
+144 [class="", fontsize=12, label=utter_seo_link];
+154 [class="", fontsize=12, label=action_seo_feature_reply];
+155 [class="", fontsize=12, label=utter_local_seo];
+158 [class="", fontsize=12, label=utter_national_seo];
+161 [class="", fontsize=12, label=utter_international_seo];
+164 [class="", fontsize=12, label=action_seo_plans];
+174 [class="", fontsize=12, label=utter_seo_basic_plan];
+184 [class="", fontsize=12, label=utter_seo_advance_plan];
+194 [class="", fontsize=12, label=utter_seo_enterprise_plan];
+202 [class="", fontsize=12, label=utter_facebook_ads];
+210 [class="", fontsize=12, label=utter_google_ads];
+219 [class="", fontsize=12, label=utter_price_cost];
+228 [class="", fontsize=12, label=utter_about_volgai];
+237 [class="", fontsize=12, label=action_seo_faq];
+246 [class="", fontsize=12, label=utter_software_development];
+259 [class="", fontsize=12, label="..."];
+262 [class="", fontsize=12, label=utter_iamabot];
+264 [class="", fontsize=12, label=utter_contact_informations];
+266 [class="", fontsize=12, label=utter_chitchat];
+268 [class="", fontsize=12, label=utter_name];
+269 [class="", fontsize=12, label=user_details_form];
+270 [class="", fontsize=12, label="..."];
+272 [class="", fontsize=12, label=user_details_form];
+273 [class="", fontsize=12, label=action_submit];
+274 [class="", fontsize=12, label=action_say_name];
+276 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+277 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+278 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+279 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+280 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+281 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+282 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+283 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+284 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+285 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+286 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+287 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+288 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+289 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+290 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+291 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+292 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+293 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+294 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+295 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+296 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+297 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+298 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+299 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+300 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+301 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+302 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+303 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+304 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+305 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+306 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+307 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+308 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+309 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+310 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+311 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+312 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+313 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+314 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+315 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+316 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+317 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+318 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+319 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+320 [class=intent, fillcolor=lightblue, label=None, shape=rect, style=filled];
+0 -> 259  [class="", key=NONE, label=""];
+0 -> 276  [class="", key=0];
+0 -> 277  [class="", key=0];
+0 -> 278  [class="", key=0];
+0 -> 279  [class="", key=0];
+0 -> 280  [class="", key=0];
+1 -> 281  [class="", key=0];
+1 -> 282  [class="", key=0];
+1 -> 283  [class="", key=0];
+1 -> 284  [class="", key=0];
+1 -> 285  [class="", key=0];
+1 -> 286  [class="", key=0];
+1 -> 287  [class="", key=0];
+1 -> 288  [class="", key=0];
+1 -> 289  [class="", key=0];
+1 -> 290  [class="", key=0];
+2 -> 291  [class="", key=0];
+2 -> 292  [class="", key=0];
+2 -> 293  [class="", key=0];
+2 -> 294  [class="", key=0];
+2 -> 295  [class="", key=0];
+2 -> 296  [class="", key=0];
+2 -> 297  [class="", key=0];
+2 -> 298  [class="", key=0];
+2 -> 299  [class="", key=0];
+2 -> 300  [class="", key=0];
+2 -> 301  [class="", key=0];
+2 -> 302  [class="", key=0];
+2 -> 303  [class="", key=0];
+2 -> 304  [class="", key=0];
+2 -> 305  [class="", key=0];
+2 -> 306  [class="", key=0];
+2 -> 307  [class="", key=0];
+3 -> 4  [class="", key=NONE, label=""];
+4 -> 308  [class="", key=0];
+4 -> 309  [class="", key=0];
+5 -> "-1"  [class="", key=NONE, label=""];
+8 -> 4  [class="", key=NONE, label=""];
+8 -> 130  [class="", key=NONE, label=""];
+10 -> "-1"  [class="", key=NONE, label=""];
+18 -> 4  [class="", key=NONE, label=""];
+28 -> 4  [class="", key=NONE, label=""];
+37 -> 4  [class="", key=NONE, label=""];
+45 -> 4  [class="", key=NONE, label=""];
+54 -> 4  [class="", key=NONE, label=""];
+63 -> 4  [class="", key=NONE, label=""];
+70 -> 4  [class="", key=NONE, label=""];
+76 -> 4  [class="", key=NONE, label=""];
+82 -> 4  [class="", key=NONE, label=""];
+90 -> 4  [class="", key=NONE, label=""];
+100 -> 4  [class="", key=NONE, label=""];
+110 -> 4  [class="", key=NONE, label=""];
+119 -> "-1"  [class="", key=NONE, label=""];
+121 -> 122  [class="", key=NONE, label=""];
+122 -> 310  [class="", key=0];
+122 -> 311  [class="", key=0];
+130 -> "-1"  [class="", key=NONE, label=""];
+133 -> 4  [class="", key=NONE, label=""];
+143 -> 144  [class="", key=NONE, label=""];
+144 -> 4  [class="", key=NONE, label=""];
+154 -> 312  [class="", key=0];
+154 -> 313  [class="", key=0];
+154 -> 314  [class="", key=0];
+155 -> "-1"  [class="", key=NONE, label=""];
+158 -> "-1"  [class="", key=NONE, label=""];
+161 -> "-1"  [class="", key=NONE, label=""];
+164 -> 4  [class="", key=NONE, label=""];
+174 -> 4  [class="", key=NONE, label=""];
+184 -> 4  [class="", key=NONE, label=""];
+194 -> 4  [class="", key=NONE, label=""];
+202 -> 4  [class="", key=NONE, label=""];
+210 -> 4  [class="", key=NONE, label=""];
+219 -> 4  [class="", key=NONE, label=""];
+228 -> 4  [class="", key=NONE, label=""];
+237 -> 4  [class="", key=NONE, label=""];
+246 -> 4  [class="", key=NONE, label=""];
+259 -> 272  [class="", key=NONE, label=""];
+259 -> 315  [class="", key=0];
+259 -> 316  [class="", key=0];
+259 -> 317  [class="", key=0];
+259 -> 318  [class="", key=0];
+259 -> 319  [class="", key=0];
+262 -> "-1"  [class="", key=NONE, label=""];
+264 -> "-1"  [class="", key=NONE, label=""];
+266 -> "-1"  [class="", key=NONE, label=""];
+268 -> 269  [class="", key=NONE, label=""];
+269 -> 270  [class="", key=NONE, label=""];
+270 -> "-1"  [class="", key=NONE, label=""];
+272 -> 273  [class="", key=NONE, label=""];
+273 -> 274  [class="", key=NONE, label=""];
+274 -> 320  [class="", key=0];
+276 -> 1  [class="", key=0];
+277 -> 70  [class="", key=0];
+278 -> 76  [class="", key=0];
+279 -> 82  [class="", key=0];
+280 -> 202  [class="", key=0];
+281 -> 2  [class="", key=0];
+282 -> 37  [class="", key=0];
+283 -> 45  [class="", key=0];
+284 -> 63  [class="", key=0];
+285 -> 119  [class="", key=0];
+286 -> 121  [class="", key=0];
+287 -> 154  [class="", key=0];
+288 -> 219  [class="", key=0];
+289 -> 237  [class="", key=0];
+290 -> 8  [class="", key=0];
+291 -> 3  [class="", key=0];
+292 -> 8  [class="", key=0];
+293 -> 18  [class="", key=0];
+294 -> 28  [class="", key=0];
+295 -> 54  [class="", key=0];
+296 -> 90  [class="", key=0];
+297 -> 100  [class="", key=0];
+298 -> 110  [class="", key=0];
+299 -> 133  [class="", key=0];
+300 -> 143  [class="", key=0];
+301 -> 164  [class="", key=0];
+302 -> 174  [class="", key=0];
+303 -> 184  [class="", key=0];
+304 -> 194  [class="", key=0];
+305 -> 210  [class="", key=0];
+306 -> 228  [class="", key=0];
+307 -> 246  [class="", key=0];
+308 -> 5  [class="", key=0];
+309 -> 10  [class="", key=0];
+310 -> 119  [class="", key=0];
+311 -> 5  [class="", key=0];
+312 -> 155  [class="", key=0];
+313 -> 158  [class="", key=0];
+314 -> 161  [class="", key=0];
+315 -> 5  [class="", key=0];
+316 -> 262  [class="", key=0];
+317 -> 264  [class="", key=0];
+318 -> 266  [class="", key=0];
+319 -> 268  [class="", key=0];
+320 -> 5  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

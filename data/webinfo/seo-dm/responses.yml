@@ -1,0 +1,306 @@
+version: "2.0"
+
+responses:
+
+  utter_marketing_service:
+    - text: "Our Digital Marketing Package features:\n\n
+
+            * Search Engine Optimization (SEO)\n
+            * Pay-Per-Click Advertising (PPC)\n
+            * Content Marketing\n
+            * Social Media Marketing\n
+            * Email Marketing\n
+            * Analytics
+    "
+
+  utter_seo:
+    - text: "Yes, We offer Search Engine Optimization (SEO) services that will help your website rank on search engine result pages."
+
+  utter_seo_link:
+    - text: To know more please refer <a href='https://volgai.com/contact'>here</a>
+
+#  utter_seo_service_feature:
+#    - text: "Our SEO service features:\n\n
+#             * Local SEO\n
+#             * National SEO\n
+#             * International SEO
+#    "
+
+  utter_local_seo:
+    - text: "Tagged as one of the prime SEO agency, company & consultant
+              service provider in Melbourne , VolgAI facilitates your business
+              with tactical local SEO services helping you gain more visibility
+              on search engines for local search results. Whether you own a
+              website or not, physical location businesses can highly benefit
+              from local SEO reinforcing to shine your business among potential
+              customers with local backlinks, localized content, consistent NAP,
+              and Google My Business.\n Plans we offer:
+              "
+      custom:
+        payload: quickReplies
+        data:
+          - title: Basic Plan
+            payload: basic seo plan
+          - title: Advance Plan
+            payload: advance seo plan
+          - title: Enterprise Plan
+            payload: enterprise seo plan
+
+  utter_national_seo:
+    - text: "National SEO is a prolonged investment but it’s definitely a
+              way that will make you stand out of your competitors. While
+              Local SEO focuses on optimizing and driving traffic from a
+              specific location,VolgAI helps your business with National SEO
+              to reach potential customers on national geographical terms.\n Plans we offer:"
+      custom:
+        payload: quickReplies
+        data:
+          - title: Basic Plan
+            payload: basic seo plan
+          - title: Advance Plan
+            payload: advance seo plan
+          - title: Enterprise Plan
+            payload: enterprise seo plan
+
+  utter_international_seo:
+    - text: "VolgAI provides ethical International SEO & expert
+             services and practices allowing you to reach international
+             audiences while establishing your business as a global
+             brand for increased website traffic and improved
+             conversion rates.\n Plans we offer:"
+      custom:
+        payload: quickReplies
+        data:
+        - title: Basic Plan
+          payload: basic seo plan
+        - title: Advance Plan
+          payload: advance seo plan
+        - title: Enterprise Plan
+          payload: enterprise seo plan
+
+  utter_seo_service_feature_link:
+    - text: "<a href='https://volgai.com/contact'>here</a>"
+
+  utter_seo_plans:
+    - text: "We’ve got 3 plans for SEO that will help you rank your website. Please choose which plan you want to opt for:\n\n
+
+            * Basic Plan - includes 5-8 keywords\n
+            * Advanced Plan - includes 12-15 keywords\n
+            * Enterprise Plan - includes 20 keywords\n
+            * out ranking your website.\n\n
+
+            Thank you for your time. Please drop your Name, Phone Number and Email and get FREE consultation with our Experts to get more details
+    "
+
+  utter_seo_basic_plan:
+    - text: "Our basic plan features:\n\n
+     ** On-Page SEO **\n
+     - EAT Factor\n
+     - Title Tag\n
+     - Description Tag\n
+     - Image Alt Tags\n
+     - Header Tags\n
+     - 5 to 8 keywords\n\n
+
+     ** Technical SEO **\n
+     - Redirection\n
+     - Canonicalization\n
+     - Mobile-Friendly/URLs\n
+     - Schema Generation\n
+     - Robots.txt Generation\n
+     - Sitemap.xml Generation\n
+     - Broken Link Correction\n
+     - Duplicate Meta Data Correction\n
+     - Google Analytics Setup/Update\n
+     - Search Console Setup/Update\n\n
+
+     ** Off-Page SEO **\n
+     - Local Listing & Citation\n
+     - Blog Commenting\n
+     - Article & Blog Submission
+    "
+
+  utter_seo_advance_plan:
+    - text: "Our advance plan features:\n\n
+     ** On-Page SEO **\n
+     - EAT Factor\n
+     - Title Tag\n
+     - Description Tag\n
+     - Image Alt Tags\n
+     - Header Tags\n
+     - SEO Writing\n
+     - Content Audit\n
+     - 12 - 15 keywords\n
+\n
+     ** Technical SEO **\n
+     - Page Speed Optimization\n
+     - Redirection\n
+     - Canonicalization\n
+     - Mobile Friendly/URLs\n
+     - Schema Generation\n
+     - Robots.txt Generation\n
+     - Sitemap.xml Generation\n
+     - Broken Link Correction\n
+     - Duplicate Meta Data Correction\n
+     - Google Analytics Setup/Update\n
+     - Search Console Setup/Update\n
+\n
+     ** Off-Page SEO **\n
+     - Local Listing & Citation\n
+     - Blog Commenting\n
+     - Article & Blog Submission\n
+     - Social Profile Creation\n
+     - Job Posting Submission\n
+     - Search Engine Submission
+
+    "
+
+  utter_seo_enterprise_plan:
+    - text: "Our enterprise plan features:\n\n
+     ** On-Page SEO **\n
+     - EAT Factor\n
+     - Title Tag\n
+     - Description Tag\n
+     - Image Alt Tags\n
+     - Header Tags\n
+     - SEO Writing\n
+     - Content Audit\n
+     - User Engagement\n
+     - Keyword Cannibalization Optimization\n
+     - 20 keywords\n\n
+
+
+     ** Technical SEO ** \n
+     - Minify CSS & Javascript\n
+     - GTM Insertion\n
+     - Page Speed Optimization\n
+     - Redirection\n
+     - Canonicalization\n
+     - Mobile Friendly/URLs\n
+     - Schema Generation\n
+     - Robots.txt Generation\n
+     - Sitemap.xml Generation\n
+     - Broken Link Correction\n
+     - Duplicate Meta Data Correction\n
+     - Google Analytics Setup/Update\n
+     - Search Console Setup/Update\n
+
+\n
+     ** Off-Page SEO ** \n
+     - Local Listing & Citation\n
+     - Blog Commenting\n
+     - Article & Blog Submission\n
+     - Social Profile Creation\n
+     - Job Posting Submission\n
+     - Search Engine Submission\n
+     - Guest Blogging\n
+     - Web2.0 Submission
+    "
+  utter_social_media_marketing:
+    - text: "Our Social Media Marketing services are:"
+      custom:
+        payload: quickReplies
+        data:
+          - title: Facebook Ads
+            payload: facebook ad
+          - title: Google Ads
+            payload: google ad
+         
+ 
+  utter_facebook_ads:
+    - text: |-
+        Yes, we can run Facebook ad campaigns for your business. You can choose the type of Facebook ad and objective from the following list:
+
+           ** Type of Facebook ads:
+              - Image ads
+              - Video ads
+              - Carousel ads
+              - Slideshow ads
+
+           ** Available options for your objective:
+              - Brand awareness
+              - Reach
+              - Traffic
+              - Engagement
+              - Video views
+              - Lead generation
+              - Messages
+              - Conversions
+
+  utter_google_ads:
+    - text: |-
+        Yes, we can run Google ad campaigns for your business. Please choose the type of Google ad and objective from the following list.
+        * Type of Google ad campaigns:
+          - Search Network Campaigns
+          - Display Network Campaigns
+          - Video Campaigns
+          - Shopping Campaigns
+          - App Campaigns
+
+        * Options for your objective:
+          - Website Traffic
+          - Sales
+          - Leads
+          - Brand Awareness & Reach
+          - Product & Brand Consideration
+          - App Promotion
+
+  utter_content_marketing:
+    - text: "Creating, publishing, and distributing content for a targeted audience through online mediums and using that content as a marketing material is what content marketing represents. VolgAI specializes in content marketing and can offer quality content for your desired audience.
+            \n\n
+             Our Content Marketing Services:\n\n
+             Building Content Strategy\n
+             Keyword Research & Selection\n
+             Blog Writing\n
+             Guest Blogging\n\n
+
+             Why choose VolgAI’s Content Marketing?:\n\n
+             Dedicated & Expert Content Writers\n
+             Experienced SEO Analysts\n
+             Years of Proven Experience\n
+             Robust Content Marketing Strategy
+    "
+
+  utter_email_marketing:
+    - text: "Email Marketing is a highly effective digital marketing strategy of collecting prospective customers’ emails and converting those emails into paying customers.\n\n
+
+             Our Email Marketing services:\n
+             Audience Research\n
+             Creating an Email List of quality leads\n
+             Newsletter Sign Up Integration\n
+             Creating and sending Personalized and converting emails \n
+             Developing Relationships With Lead Nurturing\n
+             Analysing performance of Email Marketing strategy & optimization\n
+    "
+
+  utter_data_analytics:
+    - text: "The process of examining, cleansing, transforming, and representing data for the purpose of discovering valuable insights, information, conclusions, which ultimately supports better decision-making is known as Data Analysis. VolgAI is a reliable outsourcing partner focused on generating and delivering superior value-add analytics for companies that want to gain quick, frequent and flexible insights out of their data.\n\nOur Specialities:"
+      custom:
+        payload: quickReplies
+        data:
+          - title: 'Cleansing'
+            payload: "cleansing"
+          - title: 'Validation'
+            payload: "validation"
+          - title: 'Visualization'
+            payload: "Visualization"
+          - title: 'Business Intelligence'
+            payload: "Business Intelligence"
+
+  utter_data_validation:
+    - text: "Data validation is a process of ensuring the accuracy and quality of data and making sure it has undergone data cleansing before it’s used for visualization or decision making."
+
+  utter_data_cleansing:
+    - text: "Data cleansing or data cleaning refers to the process of detecting, fixing and removing corrupt or incorrectly formatted records from a recordset or dataset. Since computers follow this simple principle of “Garbage in Garbage out”, when the input data isn’t cleansed, there remains a high possibility of incorrect data resulting in inaccurate analysis and company downfalls."
+
+  utter_data_visualization:
+    - text: "Data visualization is a visual representation of information and data in a pictorial or graphical form. Visual elements such as charts, graphs, and maps are commonly used for the representation of data and tools such as Tableau and SAS are some of the examples of the most powerful and widely used Data Visualization tools."
+
+  utter_business_intelligence:
+    - text: "BI is the use of technologies and tools to collect, store, and analyze large sets of data from business operations to assist a company in making better decisions. BI systems enable companies to conceive real-time business information in an easy to understand visual representation to improve and maintain efficiency and productivity of company operations.\n\n
+    We use BI tools such as:\n
+    - SAS\n
+    - Microsoft Power BI\n
+    - Tableau\n
+    - Datapine
+    "

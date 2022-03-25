@@ -1,0 +1,54 @@
+version: "2.0"
+
+responses:
+  utter_software_development:
+    - text: |-
+        We design and deliver robust software application development based on your business needs and requirements.
+        You can choose any of our services to turn your software idea into a feasible reality.
+
+           - Desktop Applications
+           - Mobile Applications
+           - Web Applications
+           - Cloud Applications
+
+  utter_desktop_applications:
+    - text: |-
+        Desktop Application Services:
+
+           - System and Hardware-Level Desktop Application Solutions
+           - Plugins Development
+           - Multimedia Software Development
+           - Cross-Platform Software Application
+           - SDKs
+
+  utter_mobile_applications:
+    - text: "
+        Our native/mobile application services:\n\n
+
+             - Enterprise Mobile Applications\n
+             - Multimedia Software Development\n
+             - VoIP Apps\n
+             - Wearables and Smart Device Applications\n
+             - GPS Location Apps
+        "
+
+  utter_web_applications:
+    - text: "Web application development & solutions:\n\n
+
+             Corporate Web System Solutions\n
+             ETL Software Applications\n
+             Digital Asset Management Solutions\n
+             IoT Services\n
+             AI/ML Web Applications\n
+             Web Portals\n
+             Payment Applications
+
+    "
+
+  utter_cloud_applications:
+    - text: "cloud based application development & solutions:\n\n
+           - Cloud Software Development\n
+           - Cloud-Based IoT Solutions\n
+           - Cloud Integration and Optimization\n
+           - DevOps and Cloud Management
+    "

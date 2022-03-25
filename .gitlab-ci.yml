@@ -1,0 +1,5 @@
+volgai_chatbot_job_1:
+    tags:
+      - rasa runner
+    script:
+      - echo hello world!

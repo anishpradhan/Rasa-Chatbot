@@ -1,0 +1,97 @@
+version: "2.0"
+
+stories:
+
+  - story: price cost affirm
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: price_cost
+      - action: utter_price_cost
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: price cost deny
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: price_cost
+      - action: utter_price_cost
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: about volgai affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: about_volgai
+      entities:
+        - company: "VolgAI"
+    - action: utter_about_volgai
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: about volgai deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: about_volgai
+      entities:
+        - company: "VolgAI"
+    - action: utter_about_volgai
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: faq affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: faq
+    - action: action_seo_faq
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: faq deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: faq
+    - action: action_seo_faq
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+#  - story: location access affirm
+#    steps:
+#    - intent: greet
+#    - action: utter_greet
+##    - action: utter_ask_howcanhelp
+#    - intent: location
+#    - action: action_location_access
+#    - action: utter_interested_on_other_services
+#    - intent: affirm
+#    - action: utter_choose_service
+#
+#  - story: location access deny
+#    steps:
+#    - intent: greet
+#    - action: utter_greet
+##    - action: utter_ask_howcanhelp
+#    - intent: location
+#    - action: action_location_access
+#    - action: utter_interested_on_other_services
+#    - intent: deny
+#    - action: utter_goodbye

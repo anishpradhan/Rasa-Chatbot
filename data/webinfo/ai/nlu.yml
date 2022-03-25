@@ -1,0 +1,107 @@
+version: "2.0"
+
+nlu:
+  - intent: ai_services
+    examples: |
+      - What are [AI Services]{"entity": "aiservice", "value": "AI Service"}?
+      - What are [Artificial Intelligence services]{"entity": "aiservice", "value": "AI Service"}?
+      - What are [AI services and solutions]{"entity": "aiservice", "value": "AI Service"}?
+      - [AI services]{"entity": "aiservice", "value": "AI Service"}
+      - [AI application development]{"entity": "aiservice", "value": "AI Service"}
+      - [AI app development]{"entity": "aiservice", "value": "AI Service"}
+      - ai services
+      - [Artificial Intelligence services]{"entity": "aiservice", "value": "AI Service"}
+      - [AI solutions]{"entity": "aiservice", "value": "AI Service"}
+      - [AI development]{"entity": "aiservice", "value": "AI Service"}
+      - what are ai services?
+      - tell me about ai services
+      - I want to know about ai services
+
+  - intent: ai_chatbot
+    examples: |
+      - What do [ChatBots]{"entity": "chatbotinfo", "value": "chatbot"} do?
+      - Work of [Chatbots]{"entity": "chatbotinfo", "value": "chatbot"}?
+      - [AI Chatbots developments]{"entity": "chatbotinfo", "value": "chatbot"}
+      - [Chatbot]{"entity": "chatbotinfo", "value": "chatbot"} uses?
+      - Use of [Chatbot]{"entity": "chatbotinfo", "value": "chatbot"}?
+      - [chatbot application]{"entity": "chatbotinfo", "value": "chatbot"}
+      - Where can I use [chatbots]{"entity": "chatbotinfo", "value": "chatbot"}?
+      - can you explain more about [chatbots]{"entity": "chatbotinfo", "value": "chatbot"}
+      - what is [chatbot](chatbotinfo)
+      - [chatbot development](chatbotinfo)
+      - [chatbot](chatbotinfo)
+      - [chatbot]{"entity": "chatbotinfo", "value": "chatbot"} development
+      - [chatbot]{"entity": "chatbotinfo", "value": "chatbot"}
+      - what is [chatbot development]{"entity": "chatbotinfo", "value": "chatbot"}
+      - [chatBOT development](chatbotinfo)
+
+
+  - intent: artificial_intelligence
+    examples: |
+      - What is [AI](whatai)?
+      - What is [Artificial Intelligence]{"entity": "whatai"}?
+      - What is the [meaning of Artificial Intelligence]{"entity": "whatai", "value": "meaning of AI"}?
+      - [AI meaning]{"entity": "whatai"}?
+      - I want to [know about AI]{"entity": "whatai"}
+      - [what is ai]{"entity": "whatai"}
+      - I dont want [ai]{"entity": "whatai"}
+      - I need to know about ai
+      - tell me about ai
+      - what's ai
+
+  - intent: ai_applications
+    examples: |
+      - what are the use cases of AI?
+      - what are the [AI use case](applicationai)
+      - Where is [AI used]{"entity": "applicationai", "value": "AI use case"}?
+      - [Application areas of Artificial Intelligence]{"entity": "applicationai", "value": "AI use case"}
+      - What are the major fields where [Artificial Intelligence is being used]{"entity": "applicationai", "value": "AI use case"}?
+      - [Future of Artificial Intelligence]{"entity": "applicationai", "value": "AI use case"}
+      - [application of AI]{"entity": "applicationai", "value": "AI use case"}
+      - what are [use of AI]{"entity": "applicationai", "value": "AI use case"}
+      - what is [use of AI]{"entity": "applicationai", "value": "AI use case"}
+      - what are the major [goals of AI]{"entity": "applicationai", "value": "AI use case"}?
+      - [Goals of AI]{"entity": "applicationai", "value": "AI use case"}
+      - [subfields of AI{]"entity": "applicationai", "value": "AI use case"}
+
+  - intent: machine_learning
+    examples: |
+      - What is Machine Learning
+      - ML
+      - Machine Learning
+      - What is ML
+      - Definition of ML
+      - Machine Learning definigion
+      - algorthms in ML
+      - what about machine learning
+      - Machine learning project
+      - ML projects
+      - tell me about machine learning
+      - tell me about ML
+
+
+  - intent: natural_language_processing
+    examples: |
+      - what is Natural Language Processing
+      - natural language processing
+      - nlp
+      - NLP
+      - natural language process
+      - NLP natural language processing
+      - what about NLP
+      - nature language process
+      - natural lang processing
+      - I want to know about NLP
+
+  - synonym: AI use case
+    examples: |
+      - AI used
+      - Application areas of Artificial Intelligence
+      - Artificial Intelligence is being used
+      - Future of Artificial Intelligence
+      - application of AI
+      - use of AI
+      - where is used AI
+      - what are the use case of AI
+      - use cases of AI
+      - tell me about use cases of AI

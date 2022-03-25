@@ -1,0 +1,98 @@
+[
+  {
+    "text": "where do you live",
+    "intent_response_key_target": "chitchat/ask_wherefrom",
+    "intent_response_key_prediction": {
+      "name": "chitchat/residence",
+      "confidence": 0.7304351925849915
+    }
+  },
+  {
+    "text": "you are annoying",
+    "intent_response_key_target": "chitchat/outOfScope",
+    "intent_response_key_prediction": {
+      "name": "chitchat/Annoying",
+      "confidence": 0.7367377281188965
+    }
+  },
+  {
+    "text": "where do you live?",
+    "intent_response_key_target": "chitchat/outOfScope",
+    "intent_response_key_prediction": {
+      "name": "chitchat/residence",
+      "confidence": 0.5140994787216187
+    }
+  },
+  {
+    "text": "haha",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/outOfScope",
+      "confidence": 0.18921490013599396
+    }
+  },
+  {
+    "text": "hahaha",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/help",
+      "confidence": 0.1613495647907257
+    }
+  },
+  {
+    "text": "too funny",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/Annoying",
+      "confidence": 0.3395640254020691
+    }
+  },
+  {
+    "text": "you're funny",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/Introduction",
+      "confidence": 0.4296046793460846
+    }
+  },
+  {
+    "text": "ha",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/outOfScope",
+      "confidence": 0.2286190241575241
+    }
+  },
+  {
+    "text": "HA HA",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/outOfScope",
+      "confidence": 0.3797804117202759
+    }
+  },
+  {
+    "text": "ha ha",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/outOfScope",
+      "confidence": 0.3797804117202759
+    }
+  },
+  {
+    "text": "so funny",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/joke",
+      "confidence": 0.24097535014152527
+    }
+  },
+  {
+    "text": "this is funny",
+    "intent_response_key_target": "chitchat/hahaha",
+    "intent_response_key_prediction": {
+      "name": "chitchat/Introduction",
+      "confidence": 0.7486865520477295
+    }
+  }
+]

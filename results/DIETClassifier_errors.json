@@ -1,0 +1,391 @@
+[
+  {
+    "text": "mobile application",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "mobileapp",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.5400690556816722,
+        "value": "mobile application",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "mobileapp",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.6887242197990417,
+        "value": "mobile application",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "ai services",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "aiservice",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.5979677438735962,
+        "value": "AI Service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what are ai services?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "aiservice",
+        "start": 9,
+        "end": 20,
+        "confidence_entity": 0.7452487349510193,
+        "value": "AI Service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "chatbot development",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "chatbot",
+        "entity": "chatbotinfo"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "chatbotinfo",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.6930570328030191,
+        "value": "chatbot",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "chatbotinfo",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.8623295426368713,
+        "value": "chatbot",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what's ai",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "whatai",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.6015859842300415,
+        "value": "what's ai",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "seo services",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.5287436507010992,
+        "value": "seo service",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8237165212631226,
+        "value": "seo service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "SEO services",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.5287436507010992,
+        "value": "seo service",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8237165212631226,
+        "value": "seo service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "seo features",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "seo features",
+        "entity": "seoservice"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.4600818743397562,
+        "value": "SEO features",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "seo plans",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "seoplan",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.7009796500205994,
+        "value": "seo package",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "basic seo plan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "basicseoplan",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.4620449067014804,
+        "value": "basic seo plan",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "basicseoplan",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.6683439612388611,
+        "value": "basic seo plan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "seo basic plan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "basicseoplan",
+        "start": 4,
+        "end": 14,
+        "confidence_entity": 0.7078650908192388,
+        "value": "Basic Plan",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "basicseoplan",
+        "start": 4,
+        "end": 14,
+        "confidence_entity": 0.739102303981781,
+        "value": "Basic Plan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "seo plan",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "seo plan",
+        "entity": "advanceseoplan"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "advanceseoplan",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.301149708100628,
+        "value": "seo plan",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "seoplan",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7009796500205994,
+        "value": "seo plan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what about enterprise seo plans",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "enterprise seo",
+        "entity": "enterpriseseoplan"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "enterpriseseoplan",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.8074398924158525,
+        "value": "enterprise seo",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "enterpriseseoplan",
+        "start": 11,
+        "end": 31,
+        "confidence_entity": 0.4911055266857147,
+        "value": "enterprise seo plan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "enterprise seo plan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "enterpriseseoplan",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.3853053973152256,
+        "value": "enterprise seo plan",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "enterpriseseoplan",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.7051393985748291,
+        "value": "enterprise seo plan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "facebook ad",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "facebookads",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.5788017285457485,
+        "value": "facebook ad",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "facebookads",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.7895551323890686,
+        "value": "facebook ad",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Content Writing",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "contentmarketing",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.5584551095962524,
+        "value": "Content Writing",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+version: "2.0"
+
+responses:
+  utter_ai_services:
+    - text: |-
+        Our AI application development services and solutions:
+      buttons:
+        - title: "Chatbot Development"
+          payload: "chatbot development"
+        - title: "Machine Learning"
+          payload: "machine learning"
+        - title: "Natural Language Processing(NLP)"
+          payload: "natural language processing"
+        - title: "Business Intelligence"
+          payload: "business intelligence"
+
+  utter_ai_applications:
+    - text: "Some of the major fields of AI are as follows:\n\n
+    - Machine Learning or ML\n
+    - Computer Vision\n
+    - Business Intelligence or BI\n
+    - Natural Language Processing or NLP\n\n
+
+    AI can be used or applied in all industrial domains including banking, finance, automobile, retail, healthcare, etc.\n
+    Know more about applications of AI: <a href='https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence>Click here</a>'
+    "
+
+  utter_ai_chatbot:
+    - text: "The ChatBots act more like humans that help businesses to reach out their customers, find what they need and help them.\n The team of VolgAI specializes in developing advanced chatbot solutions for increased customer services and engagement. Our chatbots act more like humans than ever before allowing businesses to attain and monitor actionable insights and consumer data for greater lead generation and driven customer interaction."
+
+  utter_AI:
+    - text: "It is the science of developing human-like intelligence through computers and machines.You can learn more about AI hera:'https://en.wikipedia.org/wiki/Artificial_intelligence'"
+
+  utter_ai_usecase:
+    - text: "All industrial domains including banking, finance, automobile, retail, and healthcare."
+
+  utter_machine_learning:
+    - text: "Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.\n
+    Our company also offers building a machine learning solution for a medium or large business.\nOur adept team of AI engineers use machine learning algorithms to ameliorate the efficiency and accuracy of escalating data to transform your operational activities with Artificial Intelligence services to power your business growth.\n
+    Know more about ML: <a href=https://en.wikipedia.org/wiki/Machine_learning>Machine Learning</a>
+    "
+
+  utter_nlp:
+    - text: "Natural Language Processing, or NLP for short, is broadly defined as the automatic manipulation of natural language, like speech and text, by software.\n
+    some common tasks are tokenization, parsing, info extraction, similarity, speech recognition, natural language generations and many others.\n
+    VolgAI facilitates businesses with advanced data analysis and market research with reduced inefficiencies and costs for increased customer satisfaction and responses\n\n
+    Know more about\nNLP: <a href=https://en.wikipedia.org/wiki/Natural_language_processing>Click here</a>\n
+    NLU: <a href=https://en.wikipedia.org/wiki/Natural-language_understanding>Click here</a>\n
+    NLU: <a href=https://en.wikipedia.org/wiki/Natural-language_generation>Click here</a>
+    "

@@ -1,0 +1,144 @@
+version: "2.0"
+
+stories:
+
+  - story: Software Development affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: software_development
+    - action: utter_software_development
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: Software Development deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: software_development
+    - action: utter_software_development
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: Desktop Applications affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: desktop_applications
+    - action: utter_desktop_applications
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: Desktop Applications deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: desktop_applications
+    - action: utter_desktop_applications
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: mobile Application affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: mobile_applications
+      entities:
+        - mobileapp: "mobile application"
+    - action: utter_mobile_applications
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: mobile Application deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: mobile_applications
+      entities:
+        - mobileapp: "mobile appplication"
+    - action: utter_mobile_applications
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: web Application affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: web_applications
+      entities:
+        - webapp: "web application"
+    - action: utter_web_applications
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: web Application deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: web_applications
+      entities:
+        - webapp: "web application"
+    - action: utter_web_applications
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: cloud Application affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: cloud_applications
+      entities:
+        - cloudapp: "cloud application"
+    - action: utter_cloud_applications
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: cloud Application deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: cloud_applications
+      entities:
+        - cloudapp: "cloud application"
+    - action: utter_cloud_applications
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+

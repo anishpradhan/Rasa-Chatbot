@@ -1,0 +1,437 @@
+version: "2.0"
+
+stories:
+
+  - story: marketing services informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: digital_marketing
+      entities:
+        - marketing: "Digital Marketing"
+    - action: utter_marketing_service
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: marketing services informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: digital_marketing
+      entities:
+        - marketing: "Digital Marketing"
+    - action: utter_marketing_service
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: SEO informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: seo
+      entities:
+        - seo: "SEO"
+    - action: utter_seo
+    - action: utter_seo_link
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: SEO informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: seo
+      entities:
+        - seo: "SEO"
+    - action: utter_seo
+    - action: utter_seo_link
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: Local SEO services informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: seo_service_feature
+      entities:
+        - seoservice: "seo services"
+    - action: action_seo_feature_reply
+    - intent: seo_types
+      entities:
+        - localseo: "Local SEO"
+    - action: utter_local_seo
+
+  - story: National SEO services informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: seo_service_feature
+      entities:
+        - seoservice: "seo services"
+    - action: action_seo_feature_reply
+    - intent: seo_types
+      entities:
+        - nationalseo: "National SEO"
+    - action: utter_national_seo
+
+  - story: International SEO services informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: seo_service_feature
+      entities:
+        - seoservice: "seo services"
+    - action: action_seo_feature_reply
+    - intent: seo_types
+      entities:
+        - intseo: "International SEO"
+    - action: utter_international_seo
+
+#
+#  - story: SEO services informations deny
+#    steps:
+#    - intent: greet
+##    - action: utter_ask_howcanhelp
+#    - intent: all_services
+#    - action: utter_choose_service
+#    - intent: seo_service_feature
+#      entities:
+#        - seoservice: "seo services"
+#    - action: action_seo_feature_reply
+##    - action: utter_seo_service_feature_link
+#    - action: utter_interested_on_other_services
+#    - intent: deny
+#    - action: utter_goodbye
+
+
+#  - story: SEO features informations affirm
+#    steps:
+#    - intent: greet
+##    - action: utter_ask_howcanhelp
+#    - intent: all_services
+#    - action: utter_choose_service
+#    - intent: seo_features
+#      entities:
+#        - seofeature: "seo features"
+#    - action: action_seo_feature_reply
+#    - action: utter_interested_on_other_services
+#    - intent: affirm
+#    - action: utter_choose_service
+#
+#  - story: SEO features informations deny
+#    steps:
+#    - intent: greet
+##    - action: utter_ask_howcanhelp
+#    - intent: all_services
+#    - action: utter_choose_service
+#    - intent: seo_features
+#      entities:
+#        - seofeature: "seo features"
+#    - action: action_seo_feature_reply
+#    - action: utter_interested_on_other_services
+#    - intent: deny
+#    - action: utter_goodbye
+
+
+  - story: SEO plans informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: seo_service_plan
+      entities:
+        - seoplan: "seo plan"
+    - action: action_seo_plans
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: SEO plans informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: seo_service_plan
+      entities:
+        - seoplan: "seo plan"
+    - action: action_seo_plans
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: Basic SEO plan informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: basic_seo
+      entities:
+        - basicseoplan: "seo basic plan"
+    - action: utter_seo_basic_plan
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: Basic SEO plan informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: basic_seo
+      entities:
+        - basicseoplan: "seo basic plan"
+    - action: utter_seo_basic_plan
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: Advance SEO plan informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: advance_seo
+      entities:
+        - advanceseoplan: "seo advance plan"
+    - action: utter_seo_advance_plan
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: Advance SEO plan informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: advance_seo
+      entities:
+        - advanceseoplan: "seo advance plan"
+    - action: utter_seo_advance_plan
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: Enterprise SEO plan informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: enterprise_seo
+      entities:
+        - enterpriseseoplan: "seo enterprise plan"
+    - action: utter_seo_enterprise_plan
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: Enterprise SEO plan informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: enterprise_seo
+      entities:
+        - enterpriseseoplan: "seo enterprise plan"
+    - action: utter_seo_enterprise_plan
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: Facebook ads affirm
+    steps:
+    - intent: facebook_ads
+      entities:
+        - facebookads: "facebook ads"
+    - action: utter_facebook_ads
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: Facebook ads informations deny
+    steps:
+    - intent: facebook_ads
+      entities:
+        - facebookads: "facebook ads"
+    - action: utter_facebook_ads
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: Google ads affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: google_ads
+      entities:
+        - googleads: "google ads"
+    - action: utter_google_ads
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: Google ads informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: google_ads
+      entities:
+        - googleads: "google ads"
+    - action: utter_google_ads
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+
+  - story: content marketing services informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: content_marketing
+      entities:
+        - contentmarketing: "Content Marketing"
+    - action: utter_content_marketing
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: content marketing services informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: content_marketing
+      entities:
+        - contentmarketing: "Content Marketing"
+    - action: utter_content_marketing
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: email marketing services informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: email_marketing
+    - action: utter_email_marketing
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: email marketing services informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+    #    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: email_marketing
+    - action: utter_email_marketing
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: social media marketing
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: social_media_marketing
+    - action: utter_social_media_marketing
+
+  - story: data analytics services informations affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+    #    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: data_analytics
+    - action: utter_data_analytics
+
+  - story: data analytics services informations deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+    #    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: data_analytics
+    - action: utter_data_analytics
+
+
+  - story: data cleansing
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: all_services
+      - action: utter_choose_service
+      - intent: data_cleansing
+      - action: utter_data_cleansing
+
+  - story: data validation
+    steps:
+      - intent: data_validation
+      - action: utter_data_validation
+
+  - story: data visualization
+    steps:
+      - intent: data_visualization
+      - action: utter_data_visualization
+
+  - story: business intelligence
+    steps:
+      - intent: business_intelligence
+      - action: utter_business_intelligence
+

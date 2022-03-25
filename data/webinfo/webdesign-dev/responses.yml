@@ -1,0 +1,33 @@
+version: "2.0"
+
+responses:
+  utter_website_development:
+    - text: |-
+        "Our developers’ team can craft any type of website depending upon your requirements. Choose the type of website you want:
+
+           - E-commerce Websites
+           - Magazine Websites
+           - Business Websites
+           - Personal Websites/Blogs
+           - Portfolio Websites
+           - Web Portal
+           - Social Media Websites
+           - Nonprofit Website
+           - Educational Website and more...
+
+
+  utter_web_features:
+    - text: |-
+        Web features we provide:
+
+           - Custom & Captivating Design
+           - Site Speed and Code Optimization
+           - Mobile-Friendly & Responsive Design
+           - Reliable Website Hosting
+           - Content Management System
+           - Safe & Secure
+           - Site Performance Analysis
+           - Site Upgrades & Maintenance
+
+  utter_want_website:
+    - text: "Please drop your Name, Phone Number, Email and the type of Website you want so we can schedule your FREE consultation with our Experts. <a href='https://volgai.com/contact'>Contact Us</a>"

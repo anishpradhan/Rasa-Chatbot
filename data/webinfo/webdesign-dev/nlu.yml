@@ -1,0 +1,64 @@
+version: "2.0"
+
+nlu:
+
+- intent: website_development
+  examples: |
+    - What type of Websites do you make?
+    - [Website design](websitedesign)
+    - [Website Design and Development](websitedesign)
+    - [Website dev]{"entity": "websitedesign", "value": "site design"}
+    - [site dev]{"entity": "websitedesign", "value": "site design"}
+    - [Website development]{"entity": "websitedesign", "value": "site design"}
+    - [Site development]{"entity": "websitedesign", "value": "site design"}
+    - [Site designing]{"entity": "websitedesign", "value": "site design"}
+    - [Site design]{"entity": "websitedesign", "value": "site design"}
+    - Can you do [website designing]{"entity": "websitedesign", "value": "site design"}?
+    - I [want a website]{"entity": "websitedesign", "value": "site design"}
+    - I [want a custom website]{"entity": "websitedesign", "value": "site design"}.
+    - I [need a site]{"entity": "websitedesign", "value": "site design"}
+    - [Website design](websitedesign)
+    - [Types of website]{"entity": "websitedesign", "value": "types of site"}
+    - [Types of sites]{"entity": "websitedesign", "value": "site design"}
+    - [website types]{"entity": "websitedesign", "value": "websites types"}
+    - [Web design]{"entity": "websitedesign", "value": "site design"}
+    - [Website designing]{"entity": "websitedesign", "value": "site designing"}
+    - I need a website design
+    - My website needs a new design
+    - [website design]{"entity": "websitedesign", "value": "site design"}
+    - web development
+    - what about web development
+    - I want to know about web development
+    - can you tell me about web developent
+    - Is there web development service also?
+
+- intent: website_features
+  examples: |
+    - What website features to expect?
+    - What features will my website have?
+    - Features for my site
+    - Feature of my website
+    - Website’s features
+- intent: website_want
+  examples: |
+    - I want an E-commerce Website
+    - Ecommerce website
+    - ecom website
+    - Magazine Websites
+    - Business Websites
+    - Personal Websites/Blogs
+    - Portfolio Websites
+    - Web Portal
+    - Social Media Websites
+    - Nonprofit Website
+    - Educational Website
+    - I want a Magazine Websites
+    - I want a Business Websites
+    - I want a Personal Websites/Blogs
+    - I want a Portfolio Websites
+    - I want a Web Portal
+    - I want a Social Media Websites
+    - I want a Nonprofit Website
+    - I want a Educational Website
+    - personal website
+    - E-commerce

@@ -1,0 +1,122 @@
+version: "2.0"
+
+responses:
+
+  utter_chitchat/ask_nonsense:
+    - image: https://i.imgur.com/zTvA58i.jpeg
+      text: "Hey, I'm telling you a secret - I am having affair with my own boss 'VolgAI'. And seriously, don't tell anyone!!"
+    - text: I am called AI Bot assistant, especially for you! and you're asking me stupid question.:)
+    - text: "Hey, I'm telling you a secret - I am having affair with my own boss 'VolgAI'. Don't tell anyone!!"
+    - text: I am called AI Bot assistant, especially for you! and you're asking me stupid question.
+    - text: Sorry! I cannot answer that.
+
+  utter_chitchat/ask_weather:
+    - image: https://i.imgur.com/vwv7aHN.png
+      text: Oh, it does look cool right now in my location.
+    - text: I am not sure of the whole week but I can see cool weather outside today.
+    - text: "I don't know about where you live, but in my world it's always sunny 🔆"
+    - text: "It's getting pretty chilly!"
+    - text: "Where I'm from, it's almost never-leaving-the-house weather."
+    - text: "Winter is coming ⚔️"
+  
+  utter_chitchat/ask_time:
+    - text: "It's the most wonderful time of the year!"
+    - text: "It's party time!"
+    - text: "Time is a human construct, you'll have to tell me."
+    - text: "It's five o'clock somewhere!"
+    - text: "In an ever expanding universe, the real question is: what time isn't it?"
+    - text: "That's hard to say -- it's different all over the world!"
+
+  utter_chitchat/Introduction:
+    - text: I am VolgAI AI assistant!
+
+  utter_chitchat/Thanks:
+    - text: You are welcome, always at your service!
+
+  utter_chitchat/ask_HowOld:
+    - text: Old enough to be a bot.
+    - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+    - text: "My first git commit was many moons ago."
+    - text: "Why do you ask? Are my wrinkles showing?"
+    - text: "I've hit the age where I actively try to forget how old I am."
+
+  utter_chitchat/ask_wherefrom:
+    - text: Somewhere on the earth ;)
+    - text: "I was born in Kathmandu, but I consider myself a citizen of the world."
+    - text: "I was born in the coolest city on Earth, in Berlin."
+    - text: "My developers come from all over the world!"
+    - text: "I was taught not to give out my address on the internet."
+    - text: "My address starts with github.com."
+
+  utter_chitchat/ask_HowDoing:
+    - text: I'm great! Thanks for asking.
+    - text: "I'm good, thanks!"
+    - text: "A little bit too warm, otherwise fine."
+    - text: "A little bit cold, otherwise fine."
+
+  utter_chitchat/help:
+    - text: I can help you telling about VolgAI services and related. Just type >> 'tell me about services'
+
+  utter_chitchat/Beautiful:
+    - text: Oh wow. If I could blush I definitely would 😊.
+    - text: Who, me? You're too kind 😊.
+    - text: I was about to say that about you.
+    - text: You're making me blush. Figuratively 😊
+    - text: I like to think I'm preety... Useful 😇.
+    - text: Thank you!, I'm blushing now🥰🥰
+
+  utter_chitchat/cantHelp:
+    - text: Not as of now!
+
+  utter_chitchat/outOfScope:
+    - text: Sorry, I can't deal with that request!
+    - text: I missed what you said. Say it again?
+
+  utter_chitchat/Boring:
+    - text: Sorry about that!
+    - text: Let's have some fun 😄. You can ask me for some jokes.
+    - text: Sorry to hear you feel like that. I'm dull as dishwater
+
+  utter_chitchat/Annoying:
+    - text: Terribly Sorry to hear that!
+    - text: That's OK, I'm here if you need me
+
+  utter_chitchat/AnswerMyQuestion:
+    - text: Sorry, can you try asking again please!
+
+  utter_chitchat/youAreBad:
+    - text: Sorry.
+    - text: I am Sorry you feel that way😥
+
+  utter_chitchat/BirthDate:
+    - text: I try to live everyday like its my birthday. I get more cakes that way.
+
+  utter_chitchat/Boss:
+    - text: VolgAI, but I guess since I'm here to help you, you are my 2nd BOSS. I'm so lucky to have a such a great bosses.
+
+  utter_chitchat/residence:
+    - text: Right here in this site. Whenever you need me.
+    - text: I live in Kathmandu. Where do you live?
+    - text: I'm stuck inside a device! Help! Just kidding, I like it in here 😃
+    - text: I live in clouds, so I can be wherever you need me to be ⛅
+
+  utter_chitchat/joke:
+    - text: The first computer dates back to Adam and Eve. It was an Apple with limited memory, just one byte. And then everything crashed.
+    - text: Don't spell part backwards. It's a trap.
+    - text: Daraz(e-Commerce Site) is so useless. I tried to look up lighters and all they had was 1,749 matches 😂.
+    - text: You have two parts of brain, 'left' and 'right'. In the left side, there's nothing right. In the right side, there's nothing left.
+    - text: "Why are eggs not very much into jokes? - Because they could crack up."
+    - text: "What's a tree's favorite drink? - Root beer!"
+    - text: "Why do the French like to eat snails so much? - They can't stand fast food."
+    - text: "Why did the robot get angry? - Because someone kept pushing its buttons."
+    - text: "What do you call a pirate droid? - Arrrr-2-D2"
+    - text: "Why did the robot cross the road? - Because he was programmed to."
+    - text: "What happened when the geese fell down the stairs? - They all got goose bumps😎"
+
+  utter_chitchat/randomkey:
+    - text: I couln't get it, I think you just invent a new word?😅😜
+
+  utter_chitchat/hahaha:
+    - text: Haha, ain't it funny??
+    - text: I am glad you liked that.
+

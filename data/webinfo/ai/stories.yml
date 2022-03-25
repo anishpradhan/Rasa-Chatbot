@@ -1,0 +1,144 @@
+version: "2.0"
+
+stories:
+  - story: ai services affirm
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ai_services
+        entities:
+          - aiservice: "AI Services"
+      - action: utter_ai_services
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: ai services deny
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ai_services
+        entities:
+          - aiservice: "AI Services"
+      - action: utter_ai_services
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: ai chatbot affirm
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ai_chatbot
+      - action: utter_ai_chatbot
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: ai chatbot deny
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ai_chatbot
+      - action: utter_ai_chatbot
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Artificial Intelligence affirm
+    steps:
+      - intent: greet
+      - action: utter_greet
+  #    - action: utter_ask_howcanhelp
+      - intent: all_services
+      - action: utter_choose_service
+      - intent: artificial_intelligence
+        entities:
+          - whatai: "AI"
+      - action: utter_AI
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: Artificial Intelligence deny
+    steps:
+      - intent: greet
+      - action: utter_greet
+  #    - action: utter_ask_howcanhelp
+      - intent: all_services
+      - action: utter_choose_service
+      - intent: artificial_intelligence
+        entities:
+          - whatai: "AI"
+      - action: utter_AI
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Artificial Intelligence Application affirm
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ai_applications
+      - action: utter_ai_usecase
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: Artificial Intelligence Application deny
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ai_applications
+      - action: utter_ai_usecase
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: machine learning affirm
+    steps:
+      - intent: machine_learning
+      - action: utter_machine_learning
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: machine learning deny
+    steps:
+      - intent: machine_learning
+      - action: utter_machine_learning
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: natural language processing affirm
+    steps:
+      - intent: natural_language_processing
+      - action: utter_nlp
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: natural language processing deny
+    steps:
+      - intent: natural_language_processing
+      - action: utter_nlp
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: natural language processing affirm
+    steps:
+      - intent: ai_applications
+      - action: utter_ai_applications
+      - action: utter_interested_on_other_services
+      - intent: affirm
+      - action: utter_choose_service
+
+  - story: natural language processing deny
+    steps:
+      - intent: ai_applications
+      - action: utter_ai_applications
+      - action: utter_interested_on_other_services
+      - intent: deny
+      - action: utter_goodbye

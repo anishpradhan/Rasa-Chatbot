@@ -1,0 +1,50 @@
+version: '3.0'
+
+services:
+
+  chatbot:
+    env_file:
+      - ./.env
+    build: .
+    image: volgai-chatbot:latest
+    ports:
+      - 5005:5005
+    volumes:
+      - ./models:/app/models
+      - ./endpoints:/app/endpoints
+      #- ./connectors:/app/connectors
+#    environment:
+#     PYTHONPATH: "/app/connectors/rasa:/app"
+#     RASA_DUCKLING_HTTP_URL: http://rasa-duckling:8000
+    command:
+      - rasa
+      - run
+      - -vv
+      - --enable-api
+      - -m
+      - /app/models
+      - --endpoints
+      - /app/endpoints/endpoints.local.yml
+      - --credentials
+      - /app/credentials.yml
+
+
+  action_server:
+    env_file:
+      - ./.env
+    build: actions
+    image: volgai-chatbot-actions:latest
+    volumes:
+      - ./actions:/app/actions
+    command:
+      - python3
+      - -m
+      - rasa_sdk
+      - --actions
+      - actions
+
+# added for speech-to-text integrations
+#  rasa-duckling:
+#   image: rasa/duckling
+#   ports:
+#     - 8000:8000

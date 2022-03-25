@@ -1,0 +1,90 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9173979759216309
+    }
+  },
+  {
+    "text": "ok",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "okay",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "are you a bot?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.8213916420936584
+    }
+  },
+  {
+    "text": "do you have a phone number?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "contact_informations",
+      "confidence": 0.45591917634010315
+    }
+  },
+  {
+    "text": "haha",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9406200647354126
+    }
+  },
+  {
+    "text": "hahaha",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9314512014389038
+    }
+  },
+  {
+    "text": "ha",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9152005910873413
+    }
+  },
+  {
+    "text": "HA HA",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8821220397949219
+    }
+  },
+  {
+    "text": "ha ha",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8821220397949219
+    }
+  },
+  {
+    "text": "seo plan",
+    "intent": "advance_seo",
+    "intent_prediction": {
+      "name": "seo_service_plan",
+      "confidence": 0.7985864281654358
+    }
+  }
+]

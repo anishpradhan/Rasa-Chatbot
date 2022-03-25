@@ -1,0 +1,87 @@
+version: "2.0"
+
+stories:
+  - story: web development & design affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: website_development
+      entities:
+        - websitedesign: "website design"
+    - action: utter_website_development
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: web development & design deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: website_development
+      entities:
+        - websitedesign: "website design"
+    - action: utter_website_development
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: web features affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: website_features
+    - action: utter_web_features
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: web features deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: website_features
+    - action: utter_web_features
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+
+
+  - story: personal websites affirm
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: website_want
+    - action: utter_want_website
+    - action: utter_interested_on_other_services
+    - intent: affirm
+    - action: utter_choose_service
+
+  - story: personal websites deny
+    steps:
+    - intent: greet
+    - action: utter_greet
+#    - action: utter_ask_howcanhelp
+    - intent: all_services
+    - action: utter_choose_service
+    - intent: website_want
+    - action: utter_want_website
+    - action: utter_interested_on_other_services
+    - intent: deny
+    - action: utter_goodbye
+

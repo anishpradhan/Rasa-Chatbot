@@ -1,0 +1,132 @@
+version: "2.0"
+
+nlu:
+
+  - intent: software_development
+    examples: |
+      - What type of Softwares do you design?
+      - Software design
+      - S/w design
+      - Software development
+      - Software Dev
+      - S/w development
+      - Custom software design
+      - Software Design and Development
+      - Custom s/w design and dev
+      - Design and dev of software
+      - Custom software development
+      - software development
+  - intent: desktop_applications
+    examples: |
+      - Desktop Application types
+      - Software development types of Desktop Application
+      - What services do desktop applications have?
+      - What are the types of software development that desktop applications will have?
+      - Types of desktop applications
+      - What services do you provide in Desktop Application?
+      - desktop application
+      - what about desktop application
+
+  - intent: mobile_applications
+    examples: |
+      - Software development types that [Mobile Application]{"entity": "mobileapp", "value": "mobile application"} can provide
+      - I want software that supports [Android devices]{"entity": "mobileapp", "value": "mobile application"}
+      - Can you develop software that supports [iOS devices]{"entity": "mobileapp", "value": "mobile application"}?
+      - [Android Development]{"entity": "mobileapp", "value": "mobile application"}
+      - [IOS app]{"entity": "mobileapp", "value": "mobile application"}
+      - [android app]{"entity": "mobileapp", "value": "mobile application"}
+      - [android application]{"entity": "mobileapp", "value": "mobile application"}
+      - [android mobile app]{"entity": "mobileapp", "value": "mobile application"}
+      - [ios application]{"entity": "mobileapp", "value": "mobile application"}
+      - [IOS application]{"entity": "mobileapp", "value": "mobile application"}
+      - mobile application development
+      - I want to know about [mobile application](mobileapp)
+      - [native application]{"entity": "mobileapp", "value": "mobile application"}
+      - what about [native application]{"entity": "mobileapp", "value": "mobile application"} development
+
+      - tell me about [mobile appication](mobileapp) development
+      - mobile application
+      - tell me about [mobile appication](mobileapp) development
+      - [mobile application](mobileapp)
+      - [android](mobileapp)
+      - [android development]{"entity": "mobileapp", "value": "mobile application"}
+
+
+      - tell me about [mobile app](mobileapp) development
+      - [mobile application](mobileapp)
+      - tell me about [mobile appication](mobileapp) development
+      - [mob application](mobileapp)
+
+  - intent: web_applications
+    examples: |
+      - types of [web applications]{"entity": "webapp", "value": "web application"} services and solutions you privide
+      - What types of [Web Application]{"entity": "webapp", "value": "web application"} can I find under Web Application Services?
+      - Web Application services
+      - Types of [web software]{"entity": "webapp", "value": "web application"} services
+      - what are the type of web application you can develop
+      - web application
+      - [web solutions]{"entity": "webapp", "value": "web application"}
+      - types of [web system solutions]{"entity": "webapp", "value": "web application"}
+      - what types of [web solutions]{"entity": "webapp", "value": "web application"} do you have?
+  - intent: cloud_applications
+    examples: |
+      - What are custom s/w development services for [cloud platforms]{"entity": "cloudapp", "value": "cloud application"}
+      - [Cloud platform services]{"entity": "cloudapp", "value": "cloud application"}
+      - Types of [cloud application](cloudapp)
+      - What type of software developments do you have for [cloud platforms]{"entity": "cloudapp", "value": "cloud application"}?
+      - [cloud applicatins]{"entity": "cloudapp", "value": "cloud application"}
+      - [cloud application](cloudapp)
+      - [cloud software development]{"entity": "cloudapp", "value": "cloud application"}
+      - do you have [cloud based software]{"entity": "cloudapp", "value": "cloud application"} development package
+      - what about [cloud applications]{"entity": "cloudapp", "value": "cloud application"}
+      - [cloud based software]{"entity": "cloudapp", "value": "cloud application"} developments
+      - [cloud software]{"entity": "cloudapp", "value": "cloud application"}
+      - [cloud platforms]{"entity": "cloudapp", "value": "cloud application"}
+
+  - synonym: AI Service
+    examples: |
+      - AI Services
+      - Artificial Intelligence services
+      - AI services and solutions
+      - AI services
+      - AI application development
+      - AI app development
+      - AI solutions
+      - AI development
+  - synonym: chatbot
+    examples: |
+      - ChatBots
+      - Chatbots
+      - AI Chatbots
+      - Chatbot
+      - chatbots
+  - synonym: mobileapp
+    examples: |
+      - Mobile Application
+      - Android devices
+      - iOS devices
+      - Android Development
+      - IOS app
+      - android app
+      - android application
+      - android mobile app
+      - ios application
+      - IOS application
+      - native application
+      - mobile application
+  - synonym: web application
+    examples: |
+      - web applications
+      - Web Application
+      - web software
+      - web solutions
+      - web system solutions
+  - synonym: cloud application
+    examples: |
+      - cloud platforms
+      - Cloud platform services
+      - cloud applicatins
+      - cloud software development
+      - cloud based software
+      - cloud applications
+      - cloud software

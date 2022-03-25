@@ -1,0 +1,53 @@
+version: "2.0"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+#- rule: Implementation of the Two-Stage-Fallback
+#  steps:
+#  - intent: out_of_scope
+#  - action: action_two_stage_fallback
+#  - active_loop: action_two_stage_fallback
+
+
+- rule: respond to contact informations
+  steps:
+  - intent: contact_informations
+  - action: utter_contact_informations
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+
+- rule: Activate user details form
+  steps:
+    - intent: ask_register
+    - action: utter_name
+    - action: user_details_form
+    - active_loop: user_details_form
+  wait_for_user_input: false
+
+- rule: Submit user details form
+  condition:
+    - active_loop: user_details_form
+  steps:
+    - action: user_details_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_submit
+    - action: action_say_name
+    - intent: goodbye
+    - action: utter_goodbye
+#    - action: utter_confirm
+
+

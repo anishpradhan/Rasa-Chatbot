@@ -1,0 +1,391 @@
+version: "2.0"
+
+nlu:
+- intent: digital_marketing
+  examples: |
+    - I want to know about [Digital Marketing](marketing)
+    - What about [digital marketing](marketing)
+    - I want to know about [marketing]{"entity": "marketing", "value": "Marketing"}
+    - Can I know about [Digital Marketing]{"entity": "marketing", "value": "analytics"}
+    - [Digital Marketing](marketing)
+    - [digital marketing](marketing)
+    - tell me about [Digital Marketing]{"entity": "marketing", "value": "analytics"}
+    - What type of [Digital Marketing]{"entity": "marketing", "value": "analytics"} packages do you have?
+    - [Digital Marketing]{"entity": "marketing", "value": "analytics"} Packages
+    - What does your [digital marketing](marketing) plan feature?
+    - [Marketing]{"entity": "marketing", "value": "analytics"} plan
+    - pes of [digital marketing](marketing) you offer
+    - Do you provide SEO/PPC/Content Marketing/Social Media Marketing/ Email [Marketing]{"entity": "marketing", "value": "marketing"} services?
+    - Do you set up [analytics]{"entity": "marketing", "value": "Analytics"} for websites?
+    - I want [digital marketing]{"entity": "marketing", "value": "Digital Marketing"} services
+    - Can you provide [digital marketing]{"entity": "marketing", "value": "Digital Marketing"} services?
+    - Can you run an email [marketing](marketing) campaign for my business?
+    - I want to know about [digital marketing]{"entity": "marketing", "value": "Digital Marketing"}
+    - what is [digital marketing]{"entity": "marketing", "value": "Digital Marketing"}
+    - [analytics]{"entity": "marketing", "value": "analytics"}
+    - [digtal marketing](marketing)
+- intent: seo
+  examples: |
+    - [SEO](seo)
+    - [seo]{"entity": "seo", "value": "SEO"}
+    - {"entity": "seo", "value": "SEO"}
+    - Can you [rank my website]{"entity": "seo", "value": "rank my site"}?
+    - [Rank my site]{"entity": "seo", "value": "rank my site"}
+    - Can you [rank my website]{"entity": "seo", "value": "rank my site"} in top 10?
+    - Is it possible to [rank my website]{"entity": "seo", "value": "rank my site"}?
+    - What service do you have to [rank my website]{"entity": "seo", "value": "rank website"}?
+    - I need my website in [number 1 rank]{"entity": "seo", "value": "rank my site"}
+    - [SEO]{"entity": "seo", "value": "seo service"}
+    - what about [seo]{"entity": "seo", "value": "SEO"}
+    - I want to [know about seo]{"entity": "seo", "value": "SEO"}
+    - can you tell me about [seo]{"entity": "seo", "value": "SEO"}
+    - I want [seo]{"entity": "seo", "value": "SEO"} expert
+    - tell me about [seo]{"entity": "seo", "value": "SEO"}
+    - Is seo
+    - I want to [rank my site]{"entity": "seo", "value": "rank site"}
+    - can I know about [SEO]{"entity": "seo", "value": "search engine optimization"}
+    - [Search Engine Optimization]{"entity": "seo", "value": "SEO"}
+    - sep
+    - se
+    - what is seo
+    - How long would it take for you to [rank my website]{"entity": "seo", "value": "SEO"} in the top 10?
+    - rank site?
+    - [rank site]{"entity": "seo", "value": "SEO"}
+    - rank sites
+    - what about ranking site?
+- intent: seo_service_feature
+  examples: |
+    - [seo services](seoservice)
+    - What [SEO services]{"entity": "seoservice", "value": "seo service"} do you offer?
+    - [SEO services]{"entity": "seoservice", "value": "seo service"}
+    - [Search Engine optimization service]{"entity": "seoservice", "value": "seo service"}
+    - Types of [SEO services]{"entity": "seoservice", "value": "seo service"}
+    - what about [seo services]{"entity": "seoservice", "value": "seo service"}?
+    - what about [services for seo]{"entity": "seoservice", "value": "seo service"}
+    - seo services
+    - SEO services
+    - What about [seo features]{"entity": "seoservice", "value": "SEO features"}
+    - [seo features](seoservice)
+    - SEO features
+    - SEO Feature
+    - [seo types]{"entity": "seoservice", "value": "seo service"}
+    - [types of seo]{"entity": "seoservice", "value": "seo service"}
+    - what [types of seo]{"entity": "seoservice", "value": "seo service"}
+    - [SEO Types]{"entity": "seoservice", "value": "seo service"}
+
+- intent: seo_service_plan
+  examples: |
+    - [seo plan](seoplan)
+    - What about [seo plans]{"entity": "seoplan", "value": "seo package"}
+    - what about [seo packages]{"entity": "seoplan", "value": "package seo"}
+    - [seo packages]{"entity": "seoplan", "value": "seo package"}
+    - [seo service package]{"entity": "seoplan", "value": "seo package"}
+    - [seo service plan]{"entity": "seoplan"}
+    - want to go [ranking]{"entity": "seoplan", "value": "rank"} my website?
+    - tell me about [all seo plans]{"entity": "seoplan", "value": "rank"} 20 keywords?
+    - What plans do you have for 5/8/12/15/20 keywords?
+    - plans for SEO
+    - seo plans
+    - your plans for seo
+    - how many seo plans you have?
+    - I want 5 [keywords in rank]{"entity": "seoplan", "value": "rank"}
+
+- intent: seo_types
+  examples: |
+    - [local seo](localseo)
+    - [Local SEO]{"entity": "localseo", "value": "local seo"}
+    - what about [local seo]{"entity": "localseo", "value": "local seo"}
+    - I want to know about [local seo]{"entity": "localseo", "value": "local seo"}
+    - [seo locally]{"entity": "localseo", "value": "local seo"}
+    - what is [local seo]{"entity": "localseo", "value": "local seo"}
+    - [Seo local]{"entity": "localseo", "value": "local seo"}
+    - [SEO Local]{"entity": "localseo", "value": "local seo"}
+    - [National SEO]{"entity": "nationalseo", "value": "seo national"}
+    - [National seo]{"entity": "nationalseo", "value": "National SEO"}
+    - [national seo]{"entity": "nationalseo", "value": "National SEO"}
+    - [national SEO]{"entity": "nationalseo", "value": "seo national"}
+    - I want [Local SEO]{"entity": "localseo", "value": "local seo"} service
+    - [international seo](intseo)
+    - [International SEO]{"entity": "intseo", "value": "international seo"}
+    - I want [National SEO]{"entity": "nationalseo", "value": "national seo"}
+    - I want [International SEO]{"entity": "intseo", "value": "international seo"}
+    - [Local SEO] for my website{"entity": "seofeature", "value":"local seo"}
+    - [National SEO] for my website{"entity": "nationalseo", "value":"national seo"}
+    - [International SEO]{"entity": "intseo", "value": "international seo"} for my website
+
+- intent: basic_seo
+  examples: |
+    - I want to know about [seo basic plan](basicseoplan)
+    - what about [seo basic plan]{"entity": "basicseoplan", "value": "SEO Basic Plan"}
+    - What does your [basic plan]{"entity": "basicseoplan", "value": "Basic seo"} include?
+    - [Basic plan]{"entity": "basicseoplan", "value": "Basic Plan"} cost
+    - [Basic SEO Plan](basicseoplan)
+    - basic seo plan
+    - seo basic plan
+    - [Basic plan]{"entity": "basicseoplan", "value": "Basic seo Plan"} period
+    - SEO [Basic plan]{"entity": "basicseoplan", "value": "Basic Plan"}
+    - [Basic plan]{"entity": "basicseoplan", "value": "Basic Plan"}
+    - What does your [basic plan]{"entity": "basicseoplan", "value": "Basic Plan"} feature?
+    - Does [SEO basic plan]{"entity": "basicseoplan", "value": "Basic Plan"} feature technical SEO?
+    - Does [SEO basic plan]{"entity": "basicseoplan", "value": "Basic Plan"} feature sitemap generation?
+    - [Basic SEO plan]{"entity": "basicseoplan", "value": "basic seo plan"}
+    - [basic plan]{"entity": "basicseoplan", "value": "Basic Plan"}
+- intent: advance_seo
+  examples: |
+    - [seo advance plan](advanceseoplan)
+    - [Advance SEO Plan](advanceseoplan)
+    - What does your [seo advance plan]{"entity": "advanceseoplan", "value": "advance seo plan"} include?
+    - [Advance plan]{"entity": "advanceseoplan", "value": "advance seo plan"} cost
+    - [Advance plan]{"entity": "advanceseoplan", "value": "advance seo plan"} period
+    - [SEO advance plan]{"entity": "advanceseoplan", "value": "advance seo plan"}
+    - [Advance plan]{"entity": "advanceseoplan", "value": "advance seo plan"}
+    - What does your [advance plan]{"entity": "advanceseoplan", "value": "advance seo plan"} feature?
+    - Does [SEO advanced plan]{"entity": "advanceseoplan", "value": "advance seo plan"} feature article submission?
+    - Does [SEO advance plan]{"entity": "advanceseoplan", "value": "advance seo plan"} feature redirection errors?
+    - [Advanced SEO plans]{"entity": "advanceseoplan", "value": "advanced seo plan"}
+    - [advanced seo plan](advanceseoplan)
+    - I want to know about [advance seo](advanceseoplan)
+    - [seo plan](advanceseoplan)
+    - [advance seo plan](advanceseoplan)
+- intent: enterprise_seo
+  examples: |
+    - what about [enterprise seo](enterpriseseoplan) plans
+    - What does your [enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"} include?
+    - enterprise seo plan
+    - [Enterprise SEO Plan](enterpriseseoplan)
+    - seo enterprise
+    - [Enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"} cost
+    - [Enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"} period
+    - [SEO enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"}
+    - [Enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"}
+    - What does your [enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"} feature?
+    - Does [SEO enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"} feature article submission?
+    - Does [SEO enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"} feature redirection errors?
+    - What about [enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"}
+    - Can i know about [enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"}
+    - Is there any [enterprise plan]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"} included?
+    - [Enterprise SEO Plans]{"entity": "enterpriseseoplan", "value": "enterprise seo plan"}
+
+- intent: social_media_marketing
+  examples: |
+    - social media marketing
+    - what about social media marketing?
+    - Tell me about social media marketing?
+    - social media
+    - social media marketing services?	
+
+- intent: facebook_ads
+  examples: |
+    - what about [facebook ads](facebookads)
+    - I want to know about [facebook ads]{"entity": "facebookads", "value": "facebook ad"}
+    - is there [facebook ads]{"entity": "facebookads", "value": "facebook ad"} service also
+    - [fb ads]{"entity": "facebookads", "value": "facebook ad"}
+    - [facebook ads]{"entity": "facebookads", "value": "facebook ad"}
+    - Can you run my [fb ads]{"entity": "facebookads", "value": "facebook ad"}
+    - Can you run my [facebook ad]{"entity": "facebookads", "value": "facebook ad"}
+    - Can you run my [Facebook Ad]{"entity": "facebookads", "value": "facebook ads"} campaigns?
+    - [Facebook Marketing]{"entity": "facebookads", "value": "facebook marketing"}
+    - [Facebook Advertisements]{"entity": "facebookads", "value": "facebook advertisements"}
+    - [Facebook Ads]{"entity": "facebookads", "value": "facebook ads"}
+    - [Facebook Ad]{"entity": "facebookads", "value": "facebook ad"} campaign
+    - [Facebook campaign]{"entity": "facebookads", "value": "facebook campaign"}
+    - [Facebook Posting]{"entity": "facebookads", "value": "facebook post"}
+- intent: google_ads
+  examples: |
+    - Can you run my [Google Ad](googleads) Campaigns?
+    - [Google Ads]{"entity": "googleads", "value": "google ad"}
+    - [PPC]{"entity": "googleads"} Ads
+    - [Google Advertisements]{"entity": "googleads", "value": "google ad"}
+    - I want to run [Google Ads]{"entity": "googleads", "value": "google ad"}
+    - I want to run [PPC ads]{"entity": "googleads", "value": "google ad"}
+    - I need to run [Google Ads]{"entity": "googleads", "value": "google ad"}
+    - I need to run [PPC ads]{"entity": "googleads", "value": "google ad"}
+    - [Google- ad]{"entity": "googleads", "value": "google ad"} campaigns
+    - [PPC ad]{"entity": "googleads", "value": "google ad"} campaigns
+    - I want to run [Google ad campaigns]{"entity": "googleads", "value": "google ad camp"}
+    - I want to run [PPC ad campaigns]{"entity": "googleads", "value": "google ad campaigns"}
+
+
+- intent: content_marketing
+  examples: |
+    - What is [content Marketing](contentmarketing)?
+    - Content marketing?
+    - what about [content marketing]{"entity":"contentmarketing"}
+    - what about [content writings](contentmarketing)
+    - [content writings](contentmarketing)
+    - [writing contents](contentmarketing)
+    - Content Writing
+    - [Write content](contentmarketing)
+    - [Marketing content](contentmarketing)
+    - [Content strategy](contentmarketing)
+    - I want content marketing
+    - Content marketing service
+    - Website content marketing
+    - Web [content writing](contentmarketing)
+
+- intent: email_marketing
+  examples: |
+    - Email Marketing
+    - what is email marketing
+    - How can I do email marketing
+    - marketing using email
+    - email marketing strategy
+    - I want email marketing
+    - email market
+    - marketing email marketing
+
+
+- intent: data_analytics
+  examples: |
+    - Data Analytics
+    - Data analysis
+    - Data science
+    - what about data analysis
+    - can you tell me about data analytics
+    - Do you provide Data Services?
+    - Data analysis services
+    - Data analytics services
+    - Data science services
+    - Data services
+    - What is Data Analysis?
+    - What is Data Analytics?
+
+
+- intent: data_cleansing
+  examples: |
+    - Data Cleansing
+    - Data cleaning
+    - What is data cleansing?
+    - Data scrubbing
+    - What is Data scrubbing?
+    - data scrubbing
+    - scrubbing of data
+    - cleansing of data
+
+- intent: data_validation
+  examples: |
+    - Data Validation
+    - What is data validation?
+    - Validating Data
+    - what about data validation in data analysis
+    - data validations
+    - validations of data
+    - tell me about data validations
+
+
+- intent: data_visualization
+  examples: |
+    - Data Visualization
+    - What is data visualization?
+    - Representing Data
+    - Data Representation
+    - visualizations of data
+    - data visual
+    - visualise data
+    - data visualise
+    - visualizations
+
+
+- intent: business_intelligence
+  examples: |
+    - What is BI?
+    - What is Business Intelligence?
+    - BI
+    - Business Intelligence
+    - BI tools
+    - Business Intelligence Tools
+    - What BI tools do you use?
+    - Which BI Tools do you prefer?
+    - BI tools
+    - Tableau
+    - Power BI
+    - MIcrosoft Power BI
+    - Datapine
+    - SAS
+    - MicroStrategy
+    - SAP
+    - Yellowfin BI
+    - QlikSense
+    - Zoho Analytics
+    - Sisense
+    - Looker
+    - Clear Analytics
+    - Oracle BI
+    - Domo
+    - IBM Cognos Analytics
+
+
+- synonym: digital marketing
+  examples: |
+    - Digital Marketing
+    - marketing
+    - Marketing
+- synonym: Analytics
+  examples: |
+    - analytics
+- synonym: Digital Marketing
+  examples: |
+    - digital marketing
+- synonym: rank my site
+  examples: |
+    - rank my website
+    - Rank my site
+    - number 1 rank
+    - cost for ranking
+    - cost to rank
+- synonym: seo service
+  examples: |
+    - SEO
+    - SEO services
+    - Search Engine optimization service
+- synonym: SEO
+  examples: |
+    - seo
+    - know about seo
+- synonym: local seo
+  examples: |
+    - keywords in rank
+    - Local SEO
+    - National SEO
+- synonym: international seo
+  examples: |
+    - International SEO
+- synonym: Basic Plan
+  examples: |
+    - seo basic plan
+    - basic plan
+    - Basic plan
+    - SEO basic plan
+    - Basic SEO plan
+- synonym: advance seo plan
+  examples: |
+    - advance plan
+    - Advance plan
+    - SEO advance plan
+    - SEO advanced plan
+- synonym: advanced seo plan
+  examples: |
+    - Advanced SEO plans
+- synonym: enterprise seo plan
+  examples: |
+    - enterprise plan
+    - Enterprise plan
+    - SEO enterprise plan
+    - Enterprise SEO Plans
+- synonym: facebook ad
+  examples: |
+    - Facebook Ad
+    - Facebook Marketing
+    - Facebook Advertisements
+    - Facebook Ads
+    - Facebook campaign
+    - Facebook Posting
+
+- synonym: Content Marketing
+  examples: |
+    - content marketing
+    - marketing content
+    - contents marketings
+    - Contents Marketing
+    - Content marketings
+    

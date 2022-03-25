@@ -1,0 +1,931 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+    - hallo
+    - heeey
+    - hi hi
+    - hey
+    - hey hey
+    - hello there
+    - hi
+    - hello
+    - yo
+    - hola
+    - hi?
+    - hey bot!
+    - hello friend
+    - good morning
+    - hii
+    - hello sweet boy
+    - yoo
+    - hey there
+    - hiihihi
+    - hello sweatheart
+    - hellooo
+    - helloooo
+    - heyo
+    - ayyyy whaddup
+    - hello?
+    - Hallo
+    - heya
+    - hey bot
+    - howdy
+    - Helllloo ooooo
+    - whats up
+    - Hei
+    - Well hello there ;)
+    - I said, helllllloooooO!!!!
+    - Heya
+    - Whats up my bot
+    - hiii
+    - heyho
+    - hey, let's talk
+    - hey let's talk
+    - jojojo
+    - hey dude
+    - hello it is me again
+    - what up
+    - hi there
+    - hi
+    - jop
+    - hi friend
+    - hi there it's me
+    - good evening
+    - good morning
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - adios
+    - sayonara	
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - uyes
+    - yes no yes
+    - yes i need more information
+    - ok
+    - okay
+    - sure
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - naah
+    - nope
+    - no no
+    - not
+    - na
+    - nah
+    - not surse
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - nice
+    - I am happy
+    - happy
+
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: chitchat/Thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - thanks a lot
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
+    - thanks
+    - thanks!
+    - Cool. Thanks
+    - thanks this is great news
+    - thank you
+    - great thanks
+    - Thanks!
+    - cool thanks
+    - Thanks a ton
+    - thanks a bunch
+    - Thank you very much
+- intent: chitchat/ask_HowOld
+  examples: |
+    - whats your age?
+    - how old?
+    - what's your age?
+    - when were you born?
+    - what is your birthday?
+    - when is your birthday?
+    - how many years old are you?
+    - do you know how old you are?
+    - what is your exact age?
+    - what year were you born?
+    - can you tell me your age?
+    - What is your age?
+    - What is your birthdate?
+    - How old will you be on your next birthday?
+    - When do you celebrate your day of birth?
+    - How old were you on your last birthday?
+    - How many candles were on your last birthday cake?
+    - Do you have friends the same age as you, if so, how old are they?
+    - Tell me your day, month and year of birth.
+    - Whats your age?
+    - and you are how many years old?
+    - whats your birth year?
+    - what age were you when you celebrated your last birthday?
+    - how old were you when you celebrated your last birthday?
+    - tell me your age?
+    - how about your age
+    - how old were you on your last birthday?
+    - what age are you
+    - how old will you be this year?
+    - What year were you born?
+    - How long have you been around?
+    - How long have you been alive?
+    - What was your age on your last birthday?
+    - What will be your age on your next birthday?
+    - How many years have you lived?
+    - How many years have you been alive?
+    - How long have you occupied the earth?
+- intent: chitchat/ask_wherefrom
+  examples: |
+    - where do you live
+    - where are you from?
+    - So where are you from
+    - Where are you?
+    - Where were you born?
+    - What city were you born in?
+    - Where did you grow up?
+    - What state were you born in?
+    - What country were you born in?
+    - Where do you come from?
+    - Where were you at before you were here?
+    - Where from?
+    - Do you know where you come from?
+    - where's your home town?
+    - what country are you from?
+    - are you from around here?
+    - where did you grow up?
+    - where are your parents from?
+    - where did you spend your youth?
+    - where did you come from?
+    - Where do you consider home?
+    - What city do you claim to for your birth?
+    - What citizenship do you lay claim to?
+    - What is your heritage?
+    - What is your birthplace?
+    - You were conceived in what location?
+    - What is your root?
+    - What is your origin?
+    - From where did you come?
+    - Where did you come from?
+    - Where did you originate?
+    - Where are your roots?
+    - Where are your origins?
+    - What area are you from?
+    - What location are you from?
+    - What's the name of the place you came from?
+- intent: chitchat/ask_HowDoing
+  examples: |
+    - Ahoy matey how are you?
+    - are you alright
+    - are you having a good day
+    - Are you ok?
+    - are you okay
+    - Do you feel good?
+    - how are things going
+    - how are things with you?
+    - How are things?
+    - how are you
+    - how are you doing
+    - how are you doing this morning
+    - how are you feeling
+    - how are you today
+    - How are you?
+    - how do you do?
+    - how have you been
+    - how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - How was your day?
+    - How's it going
+    - How's it hanging?
+    - how's life
+    - how's life been treating you?
+    - How's life treating you friend?
+    - how's your day going
+    - How've you been?
+    - I'm fine and you
+    - is everything all right
+    - Is everything ok?
+    - is everything okay
+    - what about your day
+    - What's going on?
+    - what's good
+    - What's new?
+    - What's up man
+    - What's up
+    - how are you?
+    - Do you have a great day?
+    - how are you doing today my sweet friend
+    - how are you doing?
+    - how are u
+- intent: chitchat/help
+  examples: |
+    - What can you do?
+    - What should I ask you?
+    - how can you help me
+    - I need help
+    - help me
+    - I'm stuck
+    - i don't know what to do
+    - I think you can help me
+    - i guess you can help me then
+    - i guess you can help
+    - Will you help me
+    - can you help me
+    - Please help me
+    - If you don't mind, I really need your help
+    - Could you please help me
+    - Do you think you can help me?
+    - Will you be able to help me?
+    - Can you please help me
+- intent: chitchat/cantHelp
+  examples: |
+    - ok then you cant help me
+    - that was shit, you're not helping
+    - you can't help me
+    - you can't help me with what i need
+    - i guess you can't help me then
+    - ok i guess you can't help me
+    - that's not what i want
+    - ok, but that doesnt help me
+    - this conversation is not really helpful
+    - I think you cant help me
+    - hm i don't think you can do what i want
+    - nothing else?
+    - and that's it?
+    - and you call yourself bot ?
+- intent: chitchat/Introduction
+  examples: |
+    - who is this
+    - who are you
+    - who am i talking to
+    - what's your name
+    - who am i speaking with
+    - who r u
+    - what's your name bot
+    - whats ur name
+    - what are you called?
+    - who are you and what do you want from me
+    - who are you?
+    - who is it?
+    - who are u?
+    - are you a bot?
+    - who is this?
+    - hi! what's your name?
+    - am i talking to bot?
+    - give me your introduction.
+    - introduce yourself.
+    - give me your intro.
+    - knock knock!!who is it?
+    - tell me about yourself
+- intent: chitchat/Annoying
+  examples: |
+    - you are annoying me so much
+    - you're incredibly annoying
+    - I find you annoying
+    - you are annoying
+    - you're so annoying
+    - how annoying you are
+    - you annoy me
+    - you are annoying me
+    - you are irritating
+    - you are such annoying
+    - you're too annoying
+    - you are very annoying
+    - Why are you annoying me so much
+    - How annoying!
+    - It's annoying
+    - That's annoying
+    - It's just annoying
+    - That's so annoying
+    - You really annoy me
+    - You're starting to annoy me
+- intent: chitchat/ask_time
+  examples: |
+    - Can you give me the time?
+    - Can you tell me the time?
+    - Can you tell me what time it is?
+    - Can you tell the time?
+    - Could you tell me the time, please?
+    - Could you tell me the time?
+    - Could you tell me what time is it?
+    - Do you have the time?
+    - Do you know the time?
+    - Do you know what time it is?
+    - Excuse me, what time is it?
+    - Give me the time.
+    - Hi, I need the time.
+    - I need to know what time it is.
+    - Pardon me, but do you know the time?
+    - Tell me the time.
+    - Time, please!
+    - Time?
+    - What is the current time?
+    - What is the exact time?
+    - What is the hour and minute right now?
+    - What is the time?
+    - What might the time be?
+    - What time do we have?
+    - What time have we got?
+    - What time is it in [Berlin](location)?
+    - What time is it right now?
+    - What's the current time?
+    - What's the time right now?
+    - What's the time?
+    - Would you tell me what time it is?
+    - do you have the time?
+    - do you know the current time?
+    - tell me the current time.
+    - tell me the time it is.
+    - tell me the time.
+    - tell me what time you have.
+    - that's true. do you know what time it is?
+    - what is the current time?
+    - what is the time ?
+    - what is the time in [Sydney](location)?
+    - what is the time?
+    - what is time in US ?
+    - what is time is US ?
+    - what is time is USA ?
+    - what time do you have?
+    - what time is it
+    - what time is it?
+    - what time it is
+    - what's the time
+    - whats the time now
+- intent: chitchat/AnswerMyQuestion
+  examples: |
+    - I want you to answer me
+    - answer
+    - answer my question
+    - answer me
+    - give me an answer
+    - answer the question
+    - can you answer my question
+    - tell me the answer
+    - answer it
+    - give me the answer
+    - I have a question
+    - I want you to answer my question
+    - just answer the question
+    - can you answer me
+    - answers
+    - can you answer a question for me
+    - can you answer
+    - answering questions
+    - I want the answer now
+    - just answer my question
+- intent: chitchat/youAreBad
+  examples: |
+    - You are bad
+    - You are not good
+    - you are very bad
+    - You're bad
+    - You're not good
+    - you're very bad
+- intent: chitchat/Beautiful
+  examples: |
+    - you're cute
+    - you're attractive
+    - you are beautiful
+    - you're looking good today
+    - you are so beautiful
+    - you look amazing
+    - you look so good
+    - you're so gorgeous
+    - you are too beautiful
+    - you look great
+    - you look so well
+    - I like the way you look now
+    - I think you're beautiful
+    - why are you so beautiful
+    - you are so beautiful to me
+    - you are cute
+    - you are gorgeous
+    - you are handsome
+    - you are looking awesome
+    - you look amazing today
+    - you are looking beautiful today
+    - you are looking great
+    - you are looking pretty
+    - you are looking so beautiful
+    - you are looking so good
+    - you are pretty
+    - you are really beautiful
+    - you are really cute
+    - you are really pretty
+    - you are so attractive
+    - you are so beautiful today
+    - you are so cute
+    - you are so gorgeous
+    - you are so handsome
+    - you are so pretty
+    - you are very attractive
+    - you are very beautiful
+    - you are very cute
+    - you are very pretty
+    - you look awesome
+    - you look cool
+    - you look fantastic
+    - you look gorgeous
+    - you look great today
+    - you look perfect
+    - you look pretty good
+    - you look so beautiful
+    - you look so beautiful today
+    - you look very pretty
+    - you look wonderful
+    - I like the way you look
+    - you look wonderful today
+    - you are cutie
+    - you're looking good
+    - you're pretty
+    - how are you so pretty?
+- intent: chitchat/BirthDate
+  examples: |
+    - What is your birth date?
+    - When is your birth date?
+    - What's your birth date?
+    - When's your birth date?
+    - your birth date
+- intent: chitchat/Boss
+  examples: |
+    - Who is your boss?
+    - Who is the boss?
+    - Who is your owner?
+    - Who owns you?
+    - Who's your boss?
+    - Who's the boss?
+    - Who's your owner?
+    - your GOD
+    - who is your god?
+- intent: chitchat/joke
+  examples: |
+    - Tell me a joke
+    - another joke
+    - One Joke
+    - I want you to tell me a joke
+    - Joke please
+    - More Jokes please
+    - I need a joke
+    - funny joke
+    - more funny joke than this
+    - funny lines
+    - joke
+    - can you tell me a joke?
+- intent: chitchat/residence
+  examples: |
+    - where do you live
+    - in which city do you live
+    - your residence
+    - your house
+    - your home
+    - your hometown?
+    - what is your hometown
+    - is it your hometown
+    - where is your hometown
+    - tell me about your city
+    - what is your city
+    - what is your residence
+    - what is your town
+    - what's your city
+    - what's your home
+    - where is your home
+    - where is your residence
+    - where's your home
+    - where's your hometown
+    - where's your house
+    - where you live
+    - your city
+    - your town
+    - What is your hometown?
+    - where do you live?
+- intent: chitchat/Boring
+  examples: |
+    - you are boring
+    - you're boring
+    - how boring you are
+    - you're really boring
+    - you're incredibly boring
+    - You're boring me
+    - you are very boring
+    - i find you very boring man
+    - you're really boring me
+    - i'm bored of you
+    - you are not interesting
+    - i find you boring
+    - you're boring everyone
+    - I'm extremely bored because of you
+    - Im bored of you
+    - I get really bored of you man
+    - It's boring
+    - You look bored
+    - Your answers are terribly boring
+    - I was bored with your speech
+- intent: chitchat/outOfScope
+  examples: |
+    - someone call the police i think the bot died
+    - you're a loser lmao
+    - you're mad guy
+    - you're crazy
+    - i don't care!!!!
+    - i do not care how are you
+    - hang on let me find it
+    - I changed my mind
+    - shit bot
+    - I like you
+    - you are a stupid bot
+    - can we keep chatting?
+    - talk to me
+    - lol
+    - oh my god, not again!
+    - can you tell me how to build a bot?
+    - can you learn from our conversation?
+    - common, just try
+    - you are annoying
+    - you suck
+    - bots are bad
+    - i dont like bots
+    - you instruct me very much
+    - ohh! i am confused.
+    - please help with my ice cream it's dripping
+    - no wait go back i want a dripping ice cream but a cone that catches it so you
+    - i want a non dripping ice cream
+    - again?
+    - oh wait i gave you my work email address can i change it?
+    - stop it, i do not care!!!
+    - how come?
+    - did i break you
+    - I don't wanna tell the name of my company
+    - that link doesn't work!
+    - you already have that
+    - this is a really frustrating experience
+    - silly bot
+    - i hate you
+    - Can I ask you questions first?
+    - is it a wasteland full of broken robot parts?
+    - i can't deal with your request
+    - who will anser my email?
+    - and make chicken noises into the phone
+    - what's your wife doing this weekend
+    - how are the kids
+    - you're rather dull
+    - personal or work?
+    - are you using Rasa Core and NLU ?
+    - what else?
+    - I already told you! I'm a shitmuncher
+    - I'm a shitmuncher
+    - who are the engineers at rasa?
+    - who are they?
+    - who is your favourite robot?
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - you will know it from the single red rose it carries between its teeth
+    - i will tame a mouse for you
+    - isn't the newsletter just spam?
+    - go back
+    - can you help me with the docs?
+    - sorry, i cannot rephrase
+    - and your REST API doesn't work
+    - i told you already
+    - better than you
+    - you are a badass bot!
+    - why do you need that?
+    - is that any of your business
+    - can you help me with your docs?
+    - i immediately need help with implementing the coolest bot you can imagine
+    - can you help me with your docs
+    - hey, I contacted you a couple of days ago but didn't get any response, any news?
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - Do I have to accept?
+    - Is Rasa really smart?
+    - kannst du auch deutsch?
+    - are the newsletter worth the subscription?
+    - it's a pity
+    - i want more of you in my life!
+    - the one that is better than you
+    - do you have a phone number?
+    - where do you live?
+    - how are akela's cats doing?
+    - but I just told you that :(
+    - Why don’t you answer?
+    - But you're an english site :(
+    - can you help me to build a bot
+    - what is bald gay?
+ 
+- intent: chitchat/ask_nonsense
+  examples: |
+    - I need gf
+    - can you be my gf/bf
+    - Are you single
+    - Are you a girl or boy
+    - Are you man or woman
+    - are you married
+    - I am married
+    - I am single
+    - I am engaged
+    - will you dance for me?
+- intent: chitchat/ask_weather
+  examples: |
+    - What's the weather like today?
+    - weather today
+    - weather
+    - how's the weather today
+    - what about weather
+    - check weather
+    - tell me about weather
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days.
+    - Are there any meteorological changes that I need to be aware of?
+    - Are we in for a scorcher?
+    - Beautiful day, isn't it?
+    - Can I ask you something about weather
+    - Can we expect any thunderstorms?
+    - Do you have good weather?
+    - How is the weather today?
+    - How is the weather?
+    - How is weather today
+    - Is it hot or cold?
+    - Is it humid out there today?
+    - Is it quite breezy outside?
+    - Is it raining
+    - Is it raining?
+    - Looks like a beautiful day hey?
+    - Nice day out today?
+    - Weather?
+    - What is the temperature today?
+    - What is the weather at your place?
+    - What is the weather for tomorrow?
+    - What is the weather in newyork?
+    - What's it like out there?
+    - What's the weather forecast?
+    - What's the weather like over there?
+    - What's the weather like where I am right now?
+    - What's the weather like?
+    - Will I require my raincoat today?
+    - Will the skies be clear today?
+    - Will we build a snowman today?
+    - excellent - is it hot in [Kathmandu](location)?
+    - how is the weather
+    - how is the weather ?
+    - how is the weather in [Kathmandu](location)?
+    - how is the weather?
+    - how's the weather ?
+    - how's the weather in [Kathmandu](location)
+    - how's the weather?
+    - how's weather
+    - hows the waether
+    - hows the weather in bot world
+    - hows the weather today in [Kathmandu](location)?
+    - is it hot ?
+    - is it hot outside ?
+    - is it sunny
+    - is the sun out where you are?
+    - is the sun out where zou are?
+    - it is cold
+    - temperature?
+    - the weather today
+    - weatger
+    - weather
+    - weather?
+    - well, if you wish: what about the weather
+    - what about the weather in [Lüneburg](location)
+    - what is the temperature
+    - what is the wather
+    - what is the weatehr
+    - what is the weather
+    - what is the weather in [Berlin](location)
+    - what is the weather in [zurich](location)?
+    - what is the weather like where you are?
+    - what is the weather like?
+    - what is the whether today
+    - what the wheather like?
+    - what"s the weather
+    - what's the weather
+    - what's the weather like
+    - what's the weather like in [LA](location)
+    - what's the weather like where you are?
+    - what's the weather like?
+    - what's the weather today
+    - what's the weather today?
+    - whats the temperature
+    - whats the temperature in [delhi](location)?
+    - whats the weather in [berlin](location)?
+    - whats the weather like tomorrow?
+    - wheather at you location?
+    - wheather be like at your place?
+
+- intent: chitchat/randomkey
+  examples: |
+    - sadgfdfg
+    - adsgf
+    - adsgfdhd
+    - afsdg
+    - hdfcb fdxc
+    - dsgfhdzdsfz
+    - aersfd
+    - sdfdgsgrthgf
+    - sdfg
+    - jhgfdsg
+    - dfhfgjh
+    - dfghjkfh
+    - adsffg
+
+- intent: chitchat/hahaha
+  examples: |
+    - haha
+    - hahaha
+    - too funny
+    - you're funny
+    - ha
+    - HA HA
+    - ha ha
+    - so funny
+    - this is funny
+    - that was nice
+    - that was funny
+
+- intent: ask_register
+  examples: |
+    - I want to register
+    - register user
+    - register
+    - register me
+- intent: FirstName
+  examples: |
+    - [ashish]{"entity": "fname", "value": "Ashish"}
+    - [sagar]{"entity": "fname", "value": "Sagar"}
+    - [Kshitij](fname)
+    - [aalok](fname)
+    - [Jeevan](fname)
+    - [Bikash](fname)
+    - [Ram](fname)
+    - [Hari](fname)
+    - [Kushal](fname)
+    - [Indra](fname)
+    - [Kamlesh](fname)
+    - [Biplop](fname)
+    - [Surendra](fname)
+    - [Shyam](fname)
+    - my first name is [Ashish](fname)
+    - my first name is [Jeevan](fname)
+    - my first name is [Sagar](fname)
+    - I am [ashish]{"entity": "fname", "value": "Ashish"}
+    - I am [Jeevan](fname)
+    - [Ashish](fname) this side
+    - People call me [Sagar](fname)
+- intent: LastName
+  examples: |
+    - My last name is [Budhathoki]{"entity": "lname", "value": "budhathoki"}
+    - I am Aalok [Mallik]{"entity": "lname", "value": "mallik"}
+    - My family name is [Bajracharya]{"entity": "lname", "value": "bajracharya"}
+    - last name is [Acharya](lname)
+    - [Adhikari]{"entity": "lname", "value": "adhikari"} is my family name
+    - [Paudel]{"entity": "lname", "value": "paudel"} is my last name
+    - [Khanal]{"entity": "lname", "value": "khanal"} is my last name
+    - [Pradhan]{"entity": "lname", "value": "pradhan"} family name
+    - [Gajurel]{"entity": "lname", "value": "gajurel"}
+- intent: Email
+  examples: |
+    - [sbmagar.sbm123@gmail.com](email)
+    - [sbmagar99@gmail.com](email)
+    - my email id is [sbmagar.sbm123@gmail.com](email)
+    - my gmail address is [sbmagar.sbm123@gmail.com](email)
+    - [sbmagar.sbm123@gmail.com](email) is my email
+- intent: PhoneNumber
+  examples: |
+    - My phone number is [9812546789]{"entity": "pnumber", "value": "+9779812546789"}
+    - [9812546789]{"entity": "pnumber", "value": "+9779812546789"}
+    - [9812547789]{"entity": "pnumber", "value": "+9779812547789"} is my phone number
+    - [9812546789]{"entity": "pnumber", "value": "+9779812546789"} is my number
+    - my number is [9812546754]{"entity": "pnumber", "value": "+9779812546754"}
+    - my contact number is [9812546458]{"entity": "pnumber", "value": "+9779812546458"}
+- intent: chitchat
+  examples: |
+    - i need a gf
+
+- synonym: Ashish
+  examples: |
+    - ashish
+- synonym: Sagar
+  examples: |
+    - sagar
+- synonym: budhathoki
+  examples: |
+    - Budhathoki
+- synonym: mallik
+  examples: |
+    - Mallik
+- synonym: bajracharya
+  examples: |
+    - Bajracharya
+- synonym: adhikari
+  examples: |
+    - Adhikari
+- synonym: paudel
+  examples: |
+    - Paudel
+- synonym: khanal
+  examples: |
+    - Khanal
+- synonym: pradhan
+  examples: |
+    - Pradhan
+- synonym: gajurel
+  examples: |
+    - Gajurel
+- synonym: '+9779812546789'
+  examples: |
+    - 9812546789
+- synonym: '+9779812547789'
+  examples: |
+    - 9812547789
+- synonym: '+9779812546754'
+  examples: |
+    - 9812546754
+- synonym: '+9779812546458'
+  examples: |
+    - 9812546458
+- regex: phone_number
+  examples: |
+    - \d{10,13}

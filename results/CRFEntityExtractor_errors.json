@@ -1,0 +1,676 @@
+[
+  {
+    "text": "Web design",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "site design",
+        "entity": "websitedesign"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "websitedesign",
+        "start": 4,
+        "end": 10,
+        "confidence_entity": 0.4996119894720094,
+        "value": "design",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "websitedesign",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9900296330451965,
+        "value": "site design",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "mobile application",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "mobileapp",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.5400690556816722,
+        "value": "mobile application",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "mobileapp",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.6887242197990417,
+        "value": "mobile application",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What are AI Services?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "AI Service",
+        "entity": "aiservice"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "aiservice",
+        "start": 9,
+        "end": 20,
+        "confidence_entity": 0.7452487349510193,
+        "value": "AI Service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "AI services",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "AI Service",
+        "entity": "aiservice"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "aiservice",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.5979677438735962,
+        "value": "AI Service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "chatbot development",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "chatbot",
+        "entity": "chatbotinfo"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "chatbotinfo",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.6930570328030191,
+        "value": "chatbot",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "chatbotinfo",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.8623295426368713,
+        "value": "chatbot",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to know about AI",
+    "entities": [
+      {
+        "start": 10,
+        "end": 23,
+        "value": "know about AI",
+        "entity": "whatai"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "whatai",
+        "start": 10,
+        "end": 23,
+        "confidence_entity": 0.8134516477584839,
+        "value": "know about AI",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what is ai",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "what is ai",
+        "entity": "whatai"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "whatai",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.5176170494484996,
+        "value": "ai",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "whatai",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.6015859842300415,
+        "value": "what is ai",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I dont want ai",
+    "entities": [
+      {
+        "start": 12,
+        "end": 14,
+        "value": "ai",
+        "entity": "whatai"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "whatai",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.7758119106292725,
+        "value": "ai",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you provide SEO/PPC/Content Marketing/Social Media Marketing/ Email Marketing services?",
+    "entities": [
+      {
+        "start": 71,
+        "end": 80,
+        "value": "marketing",
+        "entity": "marketing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "marketing",
+        "start": 71,
+        "end": 80,
+        "confidence_entity": 0.9842347502708435,
+        "value": "marketing",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "analytics",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "analytics",
+        "entity": "marketing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "marketing",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9917927384376526,
+        "value": "Analytics",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to know about seo",
+    "entities": [
+      {
+        "start": 10,
+        "end": 24,
+        "value": "SEO",
+        "entity": "seo"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "seo",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.7826639852416524,
+        "value": "search engine optimization",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "seo",
+        "start": 10,
+        "end": 24,
+        "confidence_entity": 0.8197630047798157,
+        "value": "SEO",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want seo expert",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "SEO",
+        "entity": "seo"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "seo",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9740400314331055,
+        "value": "search engine optimization",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "seo services",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.5287436507010992,
+        "value": "seo service",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8237165212631226,
+        "value": "seo service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "SEO services",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.5287436507010992,
+        "value": "seo service",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8237165212631226,
+        "value": "seo service",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "SEO features",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "seoservice",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.4600818743397562,
+        "value": "SEO features",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "seo plan",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "seo plan",
+        "entity": "seoplan"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "advanceseoplan",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.301149708100628,
+        "value": "seo plan",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "seoplan",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7009796500205994,
+        "value": "seo plan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "basic seo plan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "basicseoplan",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.4620449067014804,
+        "value": "basic seo plan",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "basicseoplan",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.6683439612388611,
+        "value": "basic seo plan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "seo basic plan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "basicseoplan",
+        "start": 4,
+        "end": 14,
+        "confidence_entity": 0.7078650908192388,
+        "value": "Basic Plan",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "basicseoplan",
+        "start": 4,
+        "end": 14,
+        "confidence_entity": 0.739102303981781,
+        "value": "Basic Plan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "enterprise seo plan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "enterpriseseoplan",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.3853053973152256,
+        "value": "enterprise seo plan",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "enterpriseseoplan",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.7051393985748291,
+        "value": "enterprise seo plan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Enterprise SEO Plans",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "enterprise seo plan",
+        "entity": "enterpriseseoplan"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "enterpriseseoplan",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.662723675831087,
+        "value": "Enterprise SEO",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "enterpriseseoplan",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.7051393985748291,
+        "value": "enterprise seo plan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "facebook ads?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "facebookads",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.579791760128502,
+        "value": "facebook ads",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "facebook ad",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "facebookads",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.5788017285457485,
+        "value": "facebook ad",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "facebookads",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.7895551323890686,
+        "value": "facebook ad",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to run Google ad campaigns",
+    "entities": [
+      {
+        "start": 14,
+        "end": 33,
+        "value": "google ad camp",
+        "entity": "googleads"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "googleads",
+        "start": 14,
+        "end": 23,
+        "confidence_entity": 0.970298429460407,
+        "value": "Google ad",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "googleads",
+        "start": 14,
+        "end": 33,
+        "confidence_entity": 0.7460253238677979,
+        "value": "google ad camp",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to run PPC ad campaigns",
+    "entities": [
+      {
+        "start": 14,
+        "end": 30,
+        "value": "google ad campaigns",
+        "entity": "googleads"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "googleads",
+        "start": 14,
+        "end": 20,
+        "confidence_entity": 0.932333559430405,
+        "value": "google ad",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "googleads",
+        "start": 14,
+        "end": 30,
+        "confidence_entity": 0.8327664732933044,
+        "value": "google ad campaigns",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What is content Marketing?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 25,
+        "value": "content Marketing",
+        "entity": "contentmarketing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "contentmarketing",
+        "start": 8,
+        "end": 15,
+        "confidence_entity": 0.534550656821254,
+        "value": "content",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "contentmarketing",
+        "start": 8,
+        "end": 25,
+        "confidence_entity": 0.8936073780059814,
+        "value": "content Marketing",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]
